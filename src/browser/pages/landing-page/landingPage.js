@@ -2,9 +2,8 @@ import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
 const LandingPage = () =>
-    <div>
-      <h1>Stefan McCready</h1>
-      <p>Some example text here</p>
+    <div className="container">
+      <h1 className="text-center">Stefan McCready</h1>
     </div>
 
 export default LandingPage;
