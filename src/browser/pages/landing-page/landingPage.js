@@ -2,11 +2,23 @@ import React, { PropTypes } from 'react';
 import ReactDOM from 'react-dom';
 
 const LandingPage = () =>
-    <div className="panel">
-      <div className="panel__content">
-          <h1 className="heading-large margin-bottom">Stefan McCready.</h1>
-          <h2 className="heading-medium">Front End Developer.</h2>
+    <div className="text-center">
+      <div className="panel">
+        <div className="panel__content">
+            <h1 className="heading-large margin-bottom">Stefan McCready.</h1>
+            <h2 className="heading-medium margin-bottom">Front End Developer.</h2>
+        </div>
       </div>
+      <div className="panel">
+        <div className="panel__content">
+            <h1 className="heading-large margin-bottom">Stefan McCready.</h1>
+            <h2 className="heading-medium margin-bottom">Front End Developer.</h2>
+        </div>
+      </div>
+      <button className="advance">
+          <i className="fa fa-angle-double-down" aria-hidden="true"></i>
+      </button>
     </div>
+
 
 export default LandingPage;
