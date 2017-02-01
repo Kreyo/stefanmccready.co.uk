@@ -1,0 +1,46 @@
+$global-spacing-directions: (
+  null,
+  -top,
+  -right,
+  -bottom,
+  -left,
+);
+
+$global-spacing-properties: (
+  padding,
+  margin
+);
+
+$global-spacing-sizes: (
+  null: 25px,
+  -small: 15px,
+  -large: 35px,
+) !default;
+
+@each $property in $global-spacing-properties {
+  @each $direction in $global-spacing-directions {
+
+    // This is a bit nasty… If we have a `null` direction, the implication is that
+    // we want to use the respective property on all sides (TRBL). Accordingly,
+    // create a string of `-all` to use in our class name.
+    $all: null;
+
+    @if ($direction == null) {
+      $all: -all;
+    }
+
+    @each $size, $value in $global-spacing-sizes {
+
+      .#{$property}#{$direction}#{$all}#{$size} {
+        #{$property}#{$direction}: $value !important;
+      }
+
+    }
+
+    .#{$property}#{$direction}#{$all}-none {
+      #{$property}#{$direction}: 0 !important;
+    }
+
+  }
+
+}
