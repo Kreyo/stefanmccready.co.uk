@@ -1,0 +1,19 @@
+.panel {
+    height: 100vh;
+    padding: 0 60px;
+    
+    &:first-child {
+        height: 90vh;
+    }
+}
+
+.panel__content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.panel--alternative {
+    background-color: #000;
+    color: #fff;
+}
