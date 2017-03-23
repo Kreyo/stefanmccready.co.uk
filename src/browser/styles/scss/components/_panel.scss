@@ -1,9 +1,16 @@
 .panel {
     height: 100vh;
     padding: 0 60px;
-    
+    color: #af1e2d;
+
     &:first-child {
-        height: 90vh;
+        height: 95vh;
+
+        .panel__content {
+            position: relative;
+            top: 30%;
+            transform: translateY(-50%);
+        }
     }
 }
 
@@ -14,6 +21,6 @@
 }
 
 .panel--alternative {
-    background-color: #000;
+    background-color: #af1e2d;
     color: #fff;
 }
