@@ -5,6 +5,10 @@
     i {
         font-size: 28px;
         color: #af1e2d;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 }
 

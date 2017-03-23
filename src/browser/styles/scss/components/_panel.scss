@@ -4,12 +4,10 @@
     color: #af1e2d;
 
     &:first-child {
-        height: 95vh;
+        height: 90vh;
 
         .panel__content {
-            position: relative;
             top: 30%;
-            transform: translateY(-50%);
         }
     }
 }
@@ -21,6 +19,6 @@
 }
 
 .panel--alternative {
-    background-color: #af1e2d;
+    background-color: #af1e2d;;
     color: #fff;
 }
