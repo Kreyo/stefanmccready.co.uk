@@ -1,0 +1,47 @@
+.btn {
+    padding: 15px;
+    font-size: 22px;
+    background-color: transparent;
+    font-weight: bold;
+    font-family: helvetica, sans-serif;
+}
+
+.btn--standard {
+    border: 3px solid #af1e2d;
+    transition: all 0.5s;
+
+    &:focus, &:hover {
+        outline: none;
+        cursor: pointer;
+        background-color: #af1e2d;
+        color: #fff;
+
+    }
+}
+
+.btn__arrow {
+    overflow: hidden;
+    color: #af1e2d;
+
+    &::before {
+      content: "\f063";
+      font-family: FontAwesome;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      color: #af1e2d;
+      font-size: 18px;
+      position: absolute;
+      top: -50px;
+      padding-left: 10px;
+      transition: all 0.3s;
+      left: 80%;
+    }
+
+    &:hover {
+        &::before {
+            top: 18px;
+            color: #fff;
+        }
+    }
+}

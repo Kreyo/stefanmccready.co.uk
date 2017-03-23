@@ -17,6 +17,7 @@ const LandingPage = () =>
                 <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
                 <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
             </div>
+            <button className="panel__button btn btn--standard btn__arrow">EXPLORE</button> 
         </div>
         <div className="panel panel--alternative">
             <div className="panel__content">

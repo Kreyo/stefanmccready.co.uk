@@ -1,10 +1,11 @@
 .panel {
     height: 100vh;
     padding: 0 60px;
+    position: relative;
     color: #af1e2d;
 
     &:first-child {
-        height: 90vh;
+        height: 95vh;
 
         .panel__content {
             top: 30%;
@@ -19,6 +20,14 @@
 }
 
 .panel--alternative {
-    background-color: #af1e2d;;
+    background-color: #af1e2d;
     color: #fff;
+}
+
+.panel__button {
+    position: absolute;
+    width: 250px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -125px;
 }
