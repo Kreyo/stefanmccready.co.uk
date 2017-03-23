@@ -1,0 +1,28 @@
+.icon-bar {
+    height: 120px;
+    line-height: 120px;
+
+    i {
+        font-size: 28px;
+        color: #af1e2d;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.icon-bar__left {
+    float: left;
+    width: 50%;
+}
+
+.icon-bar__right {
+    float: right;
+    width: 50%;
+    text-align: right;
+
+    i {
+        margin-left: 45px;
+    }
+}

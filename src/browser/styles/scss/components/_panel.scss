@@ -1,9 +1,15 @@
 .panel {
     height: 100vh;
     padding: 0 60px;
-    
+    position: relative;
+    color: #af1e2d;
+
     &:first-child {
-        height: 90vh;
+        height: 95vh;
+
+        .panel__content {
+            top: 30%;
+        }
     }
 }
 
@@ -14,6 +20,14 @@
 }
 
 .panel--alternative {
-    background-color: #000;
+    background-color: #af1e2d;
     color: #fff;
+}
+
+.panel__button {
+    position: absolute;
+    width: 200px;
+    bottom: 30px;
+    left: 50%;
+    margin-left: -100px;
 }
