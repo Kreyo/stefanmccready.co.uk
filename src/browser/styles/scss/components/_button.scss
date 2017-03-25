@@ -22,6 +22,7 @@
 .btn__arrow {
     overflow: hidden;
     color: #af1e2d;
+    white-space: nowrap;
 
     &::before {
       content: "\f063";
@@ -30,17 +31,16 @@
       font-weight: normal;
       text-decoration: inherit;
       color: #af1e2d;
-      font-size: 18px;
+      font-size: 24px;
       position: absolute;
-      top: -50px;
-      margin-left: 10px;
+      left: 20px;
+      padding-right: 10px;
       transition: all 0.3s;
-      left: 80%;
+      top: 15px;
     }
 
     &:hover {
         &::before {
-            top: 18px;
             color: #fff;
         }
     }
