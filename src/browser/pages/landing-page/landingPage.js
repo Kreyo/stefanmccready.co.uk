@@ -13,23 +13,34 @@ const LandingPage = () =>
                     <i className="fa fa-twitter icon-bar___icon" aria-hidden="true"></i>
                 </div>
             </div>
-            <div className="panel__content text-center">
-                <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+            <div className="panel__container">
+                <div className="text-center">
+                    <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
+                    <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+                </div>
             </div>
-            <button className="panel__button btn btn--standard btn__arrow">SCROLL</button> 
+            <button className="panel__button btn btn--standard btn__arrow">SCROLL</button>
         </div>
-        <div className="panel panel--alternative">
-            <div className="panel__content">
-                <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+        <div className="panel panel--alternative panel--narrow">
+            <div className="panel__container">
+                <div className="panel__content">
+                    <h1 className="heading-medium margin-bottom-small">I MESS AROUND WITH PIXELS.</h1>
+                    <p className="text-large panel__description">NOT MUCH ELSE TO IT REALLY. SINCE A YOUNG AGE BUILDING A WEBPAGE HAS ALWAYS BEEN AN INTEREST AND HAS HELPED ME FIND A CAREER THAT I LOVE. I HAVE ALSO FOUND DIFFERENT WAYS TO FIND BEAUTY IN SIMPLICITY.</p>
+                </div>
+                <div className="panel__icon">
+                    <i className="fa fa-desktop panel__icon" aria-hidden="true"></i>
+                </div>
             </div>
+            <button className="panel__button btn btn--alternative btn__arrow btn__arrow--alternative">SCROLL</button>
         </div>
         <div className="panel">
-            <div className="panel__content text-right">
-                <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+            <div className="panel__container">
+                <div>
+                    <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
+                    <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+                </div>
             </div>
+            <button className="panel__button btn btn--standard btn__arrow">SCROLL</button>
         </div>
     </div>
 

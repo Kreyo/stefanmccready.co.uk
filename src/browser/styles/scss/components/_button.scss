@@ -9,21 +9,31 @@
 .btn--standard {
     border: 3px solid #af1e2d;
     transition: all 0.5s;
+    color: #af1e2d;
 
     &:focus, &:hover {
         outline: none;
         cursor: pointer;
         background-color: #af1e2d;
         color: #fff;
+    }
+}
+
+.btn--alternative {
+    border: 3px solid #fff;
+    transition: all 0.5s;
+    color: #fff;
+
+    &:focus, &:hover {
+        outline: none;
+        cursor: pointer;
+        background-color: #fff;
+        color: #af1e2d;
 
     }
 }
 
 .btn__arrow {
-    overflow: hidden;
-    color: #af1e2d;
-    white-space: nowrap;
-
     &::before {
       content: "\f063";
       font-family: FontAwesome;
@@ -42,6 +52,18 @@
     &:hover {
         &::before {
             color: #fff;
+        }
+    }
+}
+
+.btn__arrow--alternative {
+    &::before {
+        color: #fff;
+    }
+
+    &:hover {
+        &::before {
+            color: #af1e2d;
         }
     }
 }
