@@ -4,10 +4,12 @@
 
     i {
         font-size: 28px;
-        color: #af1e2d;
+        color: #ABABAB;
+        transition: all 0.3s;
 
         &:hover {
             cursor: pointer;
+            color: #af1e2d;
         }
     }
 }

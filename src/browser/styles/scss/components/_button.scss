@@ -7,15 +7,14 @@
 }
 
 .btn--standard {
-    border: 3px solid #af1e2d;
+    border: border 3px solid #ababab;
     transition: all 0.5s;
-    color: #af1e2d;
+    color: #ABABAB;
 
-    &:focus, &:hover {
+     &:hover {
         outline: none;
         cursor: pointer;
-        background-color: #af1e2d;
-        color: #fff;
+        color: #af1e2d;
     }
 }
 
@@ -30,40 +29,5 @@
         background-color: #fff;
         color: #af1e2d;
 
-    }
-}
-
-.btn__arrow {
-    &::before {
-      content: "\f063";
-      font-family: FontAwesome;
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-      color: #af1e2d;
-      font-size: 24px;
-      position: absolute;
-      left: 20px;
-      padding-right: 10px;
-      transition: all 0.3s;
-      top: 15px;
-    }
-
-    &:hover {
-        &::before {
-            color: #fff;
-        }
-    }
-}
-
-.btn__arrow--alternative {
-    &::before {
-        color: #fff;
-    }
-
-    &:hover {
-        &::before {
-            color: #af1e2d;
-        }
     }
 }
