@@ -54,9 +54,25 @@
 
 .panel__button {
     position: absolute;
-    width: 166px;
+    width: 60px;
+    height: 60px;
     bottom: 30px;
     left: 50%;
-    margin-left: -83px;
-    text-align: right;
+    margin-left: -30px;
+    border-radius: 50%;
+    border: none;
+
+    i {
+        font-size: 28px;
+    }
+
+    &:hover {
+        border: 3px solid;
+        background-color: #af1e2d;
+
+        i {
+            color: #fff;
+        }
+
+    }
 }

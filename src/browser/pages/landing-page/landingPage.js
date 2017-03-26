@@ -19,7 +19,9 @@ const LandingPage = () =>
                     <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
                 </div>
             </div>
-            <button className="panel__button btn btn--standard btn__arrow">SCROLL</button>
+            <button className="btn btn--standard panel__button">
+                <i className="fa fa-arrow-down" aria-hidden="true"></i>
+            </button>
         </div>
         <div className="panel panel--alternative panel--narrow">
             <div className="panel__container">
@@ -31,7 +33,9 @@ const LandingPage = () =>
                     <i className="fa fa-desktop panel__icon" aria-hidden="true"></i>
                 </div>
             </div>
-            <button className="panel__button btn btn--alternative btn__arrow btn__arrow--alternative">SCROLL</button>
+            <button className="panel__button btn btn--alternative">
+                <i className="fa fa-arrow-down" aria-hidden="true"></i>
+            </button>
         </div>
         <div className="panel">
             <div className="panel__container">
