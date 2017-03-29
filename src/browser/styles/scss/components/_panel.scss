@@ -66,12 +66,15 @@
 }
 
 .panel-list {
-    list-style-type: initial;
+    list-style-type: none;
 }
 
 .panel-list__item {
     padding-right: 15px;
     margin-bottom: 15px;
-    display: inline;
     font-weight: bold;
+
+    @include mq($from: tablet) {
+        display: inline;
+    }
 }
