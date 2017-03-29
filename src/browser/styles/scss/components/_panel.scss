@@ -43,3 +43,38 @@
         padding-right: 20px;
     }
 }
+
+.panel__btn-set {
+    button {
+        margin-bottom: 15px;
+    }
+    span {
+        display: none;
+
+        @include mq($from: tablet) {
+            display: inline;
+        }
+    }
+
+    * {
+        display: block;
+
+        @include mq($from: tablet) {
+            display: inline-block;
+        }
+    }
+}
+
+.panel-list {
+    list-style-type: none;
+}
+
+.panel-list__item {
+    padding-right: 15px;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+    @include mq($from: tablet) {
+        display: inline;
+    }
+}
