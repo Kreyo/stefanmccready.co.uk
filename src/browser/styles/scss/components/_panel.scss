@@ -64,3 +64,14 @@
         }
     }
 }
+
+.panel-list {
+    list-style-type: initial;
+}
+
+.panel-list__item {
+    padding-right: 15px;
+    margin-bottom: 15px;
+    display: inline;
+    font-weight: bold;
+}

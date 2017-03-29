@@ -44,14 +44,27 @@ const LandingPage = () =>
         <div className="panel">
             <div className="panel__container">
                 <div className="panel__content">
-                    <h1 className="heading-medium margin-bottom-small">WHAT I DO....</h1>
-                    <p className="text-large panel__description margin-bottom-small">
-                        I AM A LEEDS BASED WEB DEVELOPER AND DESIGNER CURRENTLY WORKING FOR A MEDIA COMPANY THAT YOU MAY, OR MAY NOT, HAVE HEARD OF.
-                        SPECIALISING IN DESIGN AND ATOMIC DEVELOPMENT I HAVE BUILT EXPERIENCE IN BEING ABLE TO DELIVER SOLUTIONS TO WHAT CAN SEEM LIKE MAMMOTH SIZED PROPOSITIONS.
+                    <h1 className="heading-medium margin-bottom">WHAT I DO....</h1>
+                    <p className="text-large panel__description margin-bottom">
+                        BY TRADE I AM A FRONT END DEVELOPER. MY MAIN SKILLS ARE IN THE FOLLOWING AREAS:
                     </p>
-                    <p className="text-large panel__description margin-bottom-small">
-                        IM OBSESSED WITH MOTORSPORT, PIZZA, DEVELOPMENT AND THE ODD CHICKEN WING AS WELL.
+                    <ul className="panel-list margin-bottom">
+                      <li className="panel-list__item">HTML5</li>
+                      <li className="panel-list__item">CSS3</li>
+                      <li className="panel-list__item">JAVASCRIPT</li>
+                      <li className="panel-list__item">SEO</li>
+                      <li className="panel-list__item">WORDPRESS</li>
+                      <li className="panel-list__item">PHP</li>
+                    </ul>
+                    <p className="text-large panel__description margin-bottom">
+                        THERE ARE THEN OF COURSE THE MORE DETAILED BITS OF TECH THAT I KNOW:
                     </p>
+                    <ul className="panel-list">
+                      <li className="panel-list__item">REACT.js</li>
+                      <li className="panel-list__item">JQUERY</li>
+                      <li className="panel-list__item">SASS</li>
+                      <li className="panel-list__item">LESS</li>
+                    </ul>
                 </div>
             </div>
         </div>
