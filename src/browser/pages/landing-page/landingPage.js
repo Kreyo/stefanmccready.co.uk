@@ -18,10 +18,13 @@ const LandingPage = () =>
                     <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
                     <h2 className="heading-small margin-bottom">PROFESSIONAL PIXEL EDITOR.</h2>
                     <p className="text-normal margin-bottom">I DESIGN AND DEVELOP WEBSITES REALLY, NOTHING ELSE TO IT. </p>
-                    <button className="btn btn--standard panel__btn">SCROLL A BIT</button>
+                    <div className="panel__btn-set">
+                        <button className="btn btn--standard panel__btn">SCROLL A BIT</button>
+                        <span className="margin-left-small margin-right-small">OR</span>
+                        <button className="btn btn--standard">CONTACT ME</button>
+                    </div>
                 </div>
             </div>
-
         </div>
         <div className="panel panel--alternative">
             <div className="panel__container">
@@ -53,6 +56,5 @@ const LandingPage = () =>
             </div>
         </div>
     </div>
-
 
 export default LandingPage;
