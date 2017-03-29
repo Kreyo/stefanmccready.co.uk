@@ -14,37 +14,43 @@ const LandingPage = () =>
                 </div>
             </div>
             <div className="panel__container">
-                <div className="text-center">
+                <div>
                     <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                    <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+                    <h2 className="heading-small margin-bottom">PROFESSIONAL PIXEL EDITOR.</h2>
+                    <p className="text-normal margin-bottom">I DESIGN AND DEVELOP WEBSITES REALLY, NOTHING ELSE TO IT. </p>
+                    <button className="btn btn--standard panel__btn">SCROLL A BIT</button>
                 </div>
             </div>
-            <button className="btn btn--standard panel__button">
-                <i className="fa fa-arrow-down" aria-hidden="true"></i>
-            </button>
+
         </div>
-        <div className="panel panel--alternative panel--narrow">
+        <div className="panel panel--alternative">
             <div className="panel__container">
                 <div className="panel__content">
-                    <h1 className="heading-medium margin-bottom-small">I MESS AROUND WITH PIXELS.</h1>
-                    <p className="text-large panel__description">NOT MUCH ELSE TO IT REALLY. SINCE A YOUNG AGE BUILDING A WEBPAGE HAS ALWAYS BEEN AN INTEREST AND HAS HELPED ME FIND A CAREER THAT I LOVE. I HAVE ALSO FOUND DIFFERENT WAYS TO FIND BEAUTY IN SIMPLICITY.</p>
-                </div>
-                <div className="panel__icon">
-                    <i className="fa fa-desktop panel__icon" aria-hidden="true"></i>
+                    <h1 className="heading-medium margin-bottom-small">WHO AM I....</h1>
+                    <p className="text-large panel__description margin-bottom-small">
+                        I AM A LEEDS BASED WEB DEVELOPER AND DESIGNER CURRENTLY WORKING FOR A MEDIA COMPANY THAT YOU MAY, OR MAY NOT, HAVE HEARD OF.
+                        SPECIALISING IN DESIGN AND ATOMIC DEVELOPMENT I HAVE BUILT EXPERIENCE IN BEING ABLE TO DELIVER SOLUTIONS TO WHAT CAN SEEM LIKE MAMMOTH SIZED PROPOSITIONS.
+                    </p>
+                    <p className="text-large panel__description margin-bottom-small">
+                        IM OBSESSED WITH MOTORSPORT, PIZZA, DEVELOPMENT AND THE ODD CHICKEN WING AS WELL.
+                    </p>
+                    <button className="btn btn--alternative panel__btn">SCROLL A BIT MORE</button>
                 </div>
             </div>
-            <button className="panel__button btn btn--alternative">
-                <i className="fa fa-arrow-down" aria-hidden="true"></i>
-            </button>
         </div>
         <div className="panel">
             <div className="panel__container">
-                <div>
-                    <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                    <h2 className="heading-medium">WEBSITE DESIGNER AND DEVELOPER.</h2>
+                <div className="panel__content">
+                    <h1 className="heading-medium margin-bottom-small">WHAT I DO....</h1>
+                    <p className="text-large panel__description margin-bottom-small">
+                        I AM A LEEDS BASED WEB DEVELOPER AND DESIGNER CURRENTLY WORKING FOR A MEDIA COMPANY THAT YOU MAY, OR MAY NOT, HAVE HEARD OF.
+                        SPECIALISING IN DESIGN AND ATOMIC DEVELOPMENT I HAVE BUILT EXPERIENCE IN BEING ABLE TO DELIVER SOLUTIONS TO WHAT CAN SEEM LIKE MAMMOTH SIZED PROPOSITIONS.
+                    </p>
+                    <p className="text-large panel__description margin-bottom-small">
+                        IM OBSESSED WITH MOTORSPORT, PIZZA, DEVELOPMENT AND THE ODD CHICKEN WING AS WELL.
+                    </p>
                 </div>
             </div>
-            <button className="panel__button btn btn--standard btn__arrow">SCROLL</button>
         </div>
     </div>
 

@@ -1,20 +1,21 @@
 .btn {
     padding: 15px;
-    font-size: 22px;
+    font-size: 16px;
     background-color: transparent;
     font-weight: bold;
     font-family: helvetica, sans-serif;
 }
 
 .btn--standard {
-    border: border 3px solid #ababab;
+    border: 3px solid #af1e2d;;
     transition: all 0.5s;
-    color: #ABABAB;
+    color: #af1e2d;
 
      &:hover {
         outline: none;
         cursor: pointer;
-        color: #af1e2d;
+        background-color: #af1e2d;
+        color: #fff;
     }
 }
 
@@ -23,11 +24,10 @@
     transition: all 0.5s;
     color: #fff;
 
-    &:focus, &:hover {
+    &:hover {
         outline: none;
         cursor: pointer;
         background-color: #fff;
         color: #af1e2d;
-
     }
 }

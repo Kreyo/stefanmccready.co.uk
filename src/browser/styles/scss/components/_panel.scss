@@ -1,20 +1,19 @@
 .panel {
     height: 100vh;
-    padding: 0 60px;
+    padding: 0 30px;
     position: relative;
     color: #af1e2d;
 
     &:first-child {
-        height: 95vh;
-
+        height: 100vh;
         .panel__container {
-            top: 30%;
+            top: 35%;
         }
     }
-}
 
-.panel--narrow {
-    padding: 0 120px;
+    @include mq($from: tablet){
+        padding: 0 120px;
+    }
 }
 
 .panel--alternative {
@@ -29,50 +28,18 @@
 }
 
 .panel__content {
-    width: 55%;
-    display: inline-block;
-}
-
-.panel__content--full {
     width: 100%;
+    line-height: 1.15;
 }
 
-.panel__description {
-    line-height: 1.5;
-}
+.panel__btn {
+    text-align: left;
 
-.panel__icon {
-    width: 25%;
-    text-align: right;
-    display: inline-block;
-
-    i {
-        font-size: 200px;
-        top: 100px;
-    }
-}
-
-.panel__button {
-    position: absolute;
-    width: 60px;
-    height: 60px;
-    bottom: 30px;
-    left: 50%;
-    margin-left: -30px;
-    border-radius: 50%;
-    border: 3px solid #ababab;
-
-    i {
-        font-size: 28px;
-    }
-
-    &:hover {
-        border: 3px solid;
-        background-color: #af1e2d;
-
-        i {
-            color: #fff;
-        }
-
+    &:after {
+        position: relative;
+        left: 18px;
+        content: "\f107";
+        font-family: FontAwesome;
+        padding-right: 20px;
     }
 }
