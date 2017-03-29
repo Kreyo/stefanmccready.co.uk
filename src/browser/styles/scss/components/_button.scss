@@ -14,7 +14,8 @@
      &:hover {
         outline: none;
         cursor: pointer;
-        color: #af1e2d;
+        background-color: #af1e2d;
+        color: #fff;
     }
 }
 
@@ -23,11 +24,10 @@
     transition: all 0.5s;
     color: #fff;
 
-    &:focus, &:hover {
+    &:hover {
         outline: none;
         cursor: pointer;
         background-color: #fff;
         color: #af1e2d;
-
     }
 }
