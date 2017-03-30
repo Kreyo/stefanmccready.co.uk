@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 
 const LandingPage = () =>
     <div>
+        <div className="menu">
+            <button className="btn btn--alternative menu__close">CLOSE</button>
+            <div className="menu__content">
+                <div className="menu__content--item">
+                    <h2 className="heading-large">Menu</h2>
+                </div>
+                <div className="menu__content--item">
+                    <ul>
+                        <li>Portfolio</li>
+                        <li>Contact Me</li>
+                        <li>Github</li>
+                        <li>LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div className="panel">
             <div className="icon-bar">
                 <div className="icon-bar__left">
