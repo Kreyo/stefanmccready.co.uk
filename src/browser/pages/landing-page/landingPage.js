@@ -3,6 +3,22 @@ import ReactDOM from 'react-dom';
 
 const LandingPage = () =>
     <div>
+        <div className="menu">
+            <button className="btn btn--alternative menu__close">CLOSE</button>
+            <div className="menu-content">
+                <div className="menu-content-section">
+                    <h2 className="menu-content-section__header">Menu</h2>
+                </div>
+                <div className="menu-content-section">
+                    <ul className="menu-content-section__list">
+                        <li className="menu-content-section__list__item">Portfolio</li>
+                        <li className="menu-content-section__list__item">Contact Me</li>
+                        <li className="menu-content-section__list__item">Github</li>
+                        <li className="menu-content-section__list__item">LinkedIn</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
         <div className="panel">
             <div className="icon-bar">
                 <div className="icon-bar__left">
@@ -16,12 +32,12 @@ const LandingPage = () =>
             <div className="panel__container">
                 <div>
                     <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY.</h1>
-                    <h2 className="heading-small margin-bottom">PROFESSIONAL PIXEL EDITOR.</h2>
+                    <h2 className="heading-small margin-bottom">PROFESSIONAL PIXEL DECORATOR.</h2>
                     <p className="text-normal margin-bottom">I DESIGN AND DEVELOP WEBSITES REALLY, NOTHING ELSE TO IT. </p>
                     <div className="panel__btn-set">
                         <button className="btn btn--standard panel__btn">SCROLL A BIT</button>
                         <span className="margin-left-small margin-right-small">OR</span>
-                        <button className="btn btn--standard">CONTACT ME</button>
+                        <button className="btn btn--standard btn--mail">CONTACT ME</button>
                     </div>
                 </div>
             </div>

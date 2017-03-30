@@ -5,13 +5,16 @@
     color: #af1e2d;
 
     &:first-child {
-        height: 100vh;
         .panel__container {
             top: 35%;
         }
+
+        @include mq($from: tablet) {
+            height: 95vh;
+        }
     }
 
-    @include mq($from: tablet){
+    @include mq($from: tablet) {
         padding: 0 120px;
     }
 }
