@@ -5,16 +5,16 @@ const LandingPage = () =>
     <div>
         <div className="menu">
             <button className="btn btn--alternative menu__close">CLOSE</button>
-            <div className="menu__content">
-                <div className="menu__content--item">
-                    <h2 className="heading-large">Menu</h2>
+            <div className="menu-content">
+                <div className="menu-content-section">
+                    <h2 className="menu-content-section__header">Menu</h2>
                 </div>
-                <div className="menu__content--item">
-                    <ul>
-                        <li>Portfolio</li>
-                        <li>Contact Me</li>
-                        <li>Github</li>
-                        <li>LinkedIn</li>
+                <div className="menu-content-section">
+                    <ul className="menu-content-section__list">
+                        <li className="menu-content-section__list__item">Portfolio</li>
+                        <li className="menu-content-section__list__item">Contact Me</li>
+                        <li className="menu-content-section__list__item">Github</li>
+                        <li className="menu-content-section__list__item">LinkedIn</li>
                     </ul>
                 </div>
             </div>
