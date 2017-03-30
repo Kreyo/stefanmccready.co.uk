@@ -31,3 +31,15 @@
         color: #af1e2d;
     }
 }
+
+.btn--mail {
+  text-align: left;
+
+  &:after {
+      position: relative;
+      left: 18px;
+      content: "\f003";
+      font-family: FontAwesome;
+      padding-right: 20px;
+  }
+}
