@@ -33,21 +33,42 @@
 }
 
 .menu__content--item {
-    display: inline-block;
-    padding: 40px;
-
-    &:last-child {
-        border-left: 2px solid #fff;
-    }
 
     li {
         padding: 20px 0px;
-        text-align: left;
+        text-align: center;
         font-size: 24px;
-        width: 170px;
         overflow:hidden;
         transition: all 0.25s;
+    }
 
+    ul {
+        border-top: 2px solid #fff;
+        margin: 20px 40px;
+        padding-top: 20px;
+    }
+
+    @include mq($from: tablet) {
+      display: inline-block;
+      padding: 40px;
+
+      &:last-child {
+          border-left: 2px solid #fff;
+      }
+
+      h2 {
+        position: relative;
+        top: 100%;
+        transform: translateY(-175%);
+      }
+
+      ul {
+          border: none;
+          padding: 0px;
+          margin: 0px;
+      }
+
+      li {
         &:after {
             position: relative;
             left: 100px;
@@ -63,11 +84,6 @@
                 left: 20px;
             }
         }
-    }
-
-    h2 {
-      position: relative;
-      top: 100%;
-      transform: translateY(-175%);
+      }
     }
 }
