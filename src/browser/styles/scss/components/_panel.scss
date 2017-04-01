@@ -34,6 +34,7 @@
     text-align: left;
     height: 50px;
     width: 50px;
+    border-radius: 50%;
 }
 
 .panel-list {
@@ -48,4 +49,18 @@
     @include mq($from: tablet) {
         display: inline;
     }
+}
+.panel__description {
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq($from: tablet) {
+        width: 40%;
+    }
+}
+
+.panel__image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }

@@ -25,9 +25,11 @@ const LandingPage = () =>
             </div>
         </div>
         <div className="panel">
-            <div className="panel__container">
+            <div className="panel__container text-center">
                 <div className="panel__content">
-                    <h1 className="heading-medium">HELLO!</h1>
+                    <h1 className="heading-medium margin-bottom-large">HELLO | BONJOUR | 你好</h1>
+                    <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} />
+                    <p className="text-large panel__description">My name is Stefan and I currently work as a front-end developer at <strong>Sky</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.</p>
                 </div>
             </div>
         </div>
