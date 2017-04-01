@@ -1,17 +1,7 @@
 .icon-bar {
     height: 120px;
     line-height: 120px;
-
-    i {
-        font-size: 28px;
-        color: #ABABAB;
-        transition: all 0.3s;
-
-        &:hover {
-            cursor: pointer;
-            color: #af1e2d;
-        }
-    }
+    color: #af1e2d;
 }
 
 .icon-bar__left {
@@ -25,10 +15,17 @@
     text-align: right;
 
     i {
-        margin-left: 30px;
-
-        @include mq($from: 321px) {
-            margin-left: 45px;
-        }
+        position: relative;
+        top: -2px;
     }
+}
+
+.icon-bar__icon {
+    font-size: 32px;
+    color: #fff;
+    transition: all 0.25s;
+    border: none;
+    height: 60px;
+    width: 60px;
+    background-color: transparent;
 }
