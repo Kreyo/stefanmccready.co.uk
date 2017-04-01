@@ -13,21 +13,19 @@
     float: right;
     width: 50%;
     text-align: right;
+
+    i {
+        position: relative;
+        top: -2px;
+    }
 }
 
 .icon-bar__icon {
-    font-size: 28px;
+    font-size: 32px;
     color: #fff;
-    transition: all 0.3s;
+    transition: all 0.25s;
     border: none;
     height: 60px;
     width: 60px;
     background-color: transparent;
-
-    &:hover {
-       outline: none;
-       cursor: pointer;
-       background-color: #af1e2d;
-       color: #fff;
-   }
 }
