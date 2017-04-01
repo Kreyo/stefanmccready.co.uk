@@ -3,13 +3,13 @@
     font-size: 16px;
     background-color: transparent;
     font-weight: bold;
-    border-radius: 50%;
+    border-radius: 5px;
 }
 
 .btn--standard {
     border: 2px solid #af1e2d;
     transition: all 0.5s;
-    color: #fff;
+    color: #af1e2d;
 
      &:hover {
         outline: none;
@@ -30,4 +30,8 @@
         background-color: #fff;
         color: #af1e2d;
     }
+}
+
+.btn--circle {
+    border-radius: 50%;
 }
