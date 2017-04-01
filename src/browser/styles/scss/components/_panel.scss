@@ -1,7 +1,8 @@
 .panel {
     height: 100vh;
-    padding: 0 30px;
+    padding: 0 25px;
     position: relative;
+    background-color: #fff;
     color: #af1e2d;
 
     &:first-child {
@@ -9,13 +10,7 @@
             top: 35%;
         }
 
-        @include mq($from: tablet) {
-            height: 95vh;
-        }
-    }
-
-    @include mq($from: tablet) {
-        padding: 0 120px;
+        height: 85vh;
     }
 }
 
@@ -37,35 +32,8 @@
 
 .panel__btn {
     text-align: left;
-
-    &:after {
-        position: relative;
-        left: 18px;
-        content: "\f107";
-        font-family: FontAwesome;
-        padding-right: 20px;
-    }
-}
-
-.panel__btn-set {
-    button {
-        margin-bottom: 15px;
-    }
-    span {
-        display: none;
-
-        @include mq($from: tablet) {
-            display: inline;
-        }
-    }
-
-    * {
-        display: block;
-
-        @include mq($from: tablet) {
-            display: inline-block;
-        }
-    }
+    height: 50px;
+    width: 50px;
 }
 
 .panel-list {

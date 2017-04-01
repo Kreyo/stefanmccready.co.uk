@@ -3,12 +3,13 @@
     font-size: 16px;
     background-color: transparent;
     font-weight: bold;
+    border-radius: 5px;
 }
 
 .btn--standard {
     border: 2px solid #af1e2d;
     transition: all 0.5s;
-    color: #af1e2d;
+    color: #fff;
 
      &:hover {
         outline: none;
@@ -29,28 +30,4 @@
         background-color: #fff;
         color: #af1e2d;
     }
-}
-
-.btn--mail {
-  text-align: left;
-
-  &:after {
-      position: relative;
-      left: 18px;
-      content: "\f003";
-      font-family: FontAwesome;
-      padding-right: 20px;
-  }
-}
-
-.btn--close {
-  text-align: left;
-
-  &:after {
-      position: relative;
-      left: 18px;
-      content: "\f00d";
-      font-family: FontAwesome;
-      padding-right: 20px;
-  }
 }
