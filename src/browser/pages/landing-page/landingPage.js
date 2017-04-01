@@ -30,7 +30,7 @@ const LandingPage = () =>
                     <h1 className="heading-medium margin-bottom-large">HELLO | BONJOUR | 你好</h1>
                     <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} />
                     <p className="text-large panel__description margin-bottom">My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.</p>
-                    <button className="btn btn--standard"><span className="margin-right-small">DOWNLOAD MY CV</span><i className="fa fa-download" aria-hidden="true"></i></button>
+                    <button className="btn btn--standard"><span className="margin-right-small">Download my CV</span><i className="fa fa-download" aria-hidden="true"></i></button>
                 </div>
             </div>
         </div>
