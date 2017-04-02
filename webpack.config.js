@@ -31,6 +31,7 @@ module.exports = {
             }
         ]
     },
+
     sassLoader: {
         outputStyle: 'compressed',
         includePaths: ['node_modules']
