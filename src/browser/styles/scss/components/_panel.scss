@@ -4,14 +4,6 @@
     position: relative;
     background-color: #fff;
     color: #af1e2d;
-
-    &:first-child {
-        .panel__container {
-            top: 35%;
-        }
-
-        height: 100vh;
-    }
 }
 
 .panel--alternative {
