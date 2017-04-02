@@ -17,5 +17,5 @@ https://waffle.io/StefanMcCready/stefanmccready.co.uk
 ## Core Contributor
 ![alt text]( https://avatars.githubusercontent.com/StefanMcCready "Stefans Face")
 
-[Stefan McCready](https://avatars.githubusercontent.com/stefanmccready) - 
+[Stefan McCready](https://github.com/StefanMcCready) - 
 A fresh faced front end developer living life in Leeds
