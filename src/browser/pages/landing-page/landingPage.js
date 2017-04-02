@@ -20,7 +20,7 @@ const LandingPage = () =>
             <div className="panel__container text-center">
                 <div>
                     <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY</h1>
-                    <h2 className="heading-small margin-bottom">DEVELOPER | DESIGNER</h2>
+                    <h2 className="heading-small margin-bottom">DEVELOPER | DESIGNER | OBSESSED F1 FAN</h2>
                 </div>
             </div>
             <button className="btn btn--alternative btn--circle panel__btn"><i className="fa fa-arrow-down" aria-hidden="true"></i></button>
@@ -34,6 +34,7 @@ const LandingPage = () =>
                     <button className="btn btn--standard"><span className="margin-right-small">Download my CV</span><i className="fa fa-download" aria-hidden="true"></i></button>
                 </div>
             </div>
+            <button className="btn btn--standard btn--circle panel__btn"><i className="fa fa-arrow-down" aria-hidden="true"></i></button>
         </div>
         <div className="panel panel--alternative">
             <div className="panel__container text-center">
