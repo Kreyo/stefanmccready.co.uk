@@ -4,26 +4,26 @@ import ReactDOM from 'react-dom';
 const LandingPage = () =>
     <div>
         <div className="panel panel--alternative">
-          <div className="icon-bar">
-              <div className="icon-bar__left">
-                  <button className="icon-bar__icon">
-                      <i className="fa fa-bars" aria-hidden="true"></i>
-                      <span>MENU</span>
-                  </button>
-              </div>
-              <div className="icon-bar__right">
-                  <button className="icon-bar__icon">
-                      <i className="fa fa-linkedin" aria-hidden="true"></i>
-                  </button>
-              </div>
-          </div>
+            <div className="icon-bar">
+                <div className="icon-bar__left">
+                    <button className="icon-bar__icon">
+                        <i className="fa fa-bars" aria-hidden="true"></i>
+                        <span>MENU</span>
+                    </button>
+                </div>
+                <div className="icon-bar__right">
+                    <button className="icon-bar__icon">
+                        <i className="fa fa-linkedin" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </div>
             <div className="panel__container text-center">
                 <div>
                     <h1 className="heading-large margin-bottom-small">STEFAN MCCREADY</h1>
                     <h2 className="heading-small margin-bottom">DEVELOPER | DESIGNER</h2>
-                    <button className="btn btn--alternative btn--circle panel__btn"><i className="fa fa-arrow-down" aria-hidden="true"></i></button>
                 </div>
             </div>
+            <button className="btn btn--alternative btn--circle panel__btn"><i className="fa fa-arrow-down" aria-hidden="true"></i></button>
         </div>
         <div className="panel">
             <div className="panel__container text-center">
