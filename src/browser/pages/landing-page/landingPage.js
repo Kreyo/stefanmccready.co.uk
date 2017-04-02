@@ -8,6 +8,7 @@ const LandingPage = () =>
               <div className="icon-bar__left">
                   <button className="icon-bar__icon">
                       <i className="fa fa-bars" aria-hidden="true"></i>
+                      <span>MENU</span>
                   </button>
               </div>
               <div className="icon-bar__right">

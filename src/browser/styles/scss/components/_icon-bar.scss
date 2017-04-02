@@ -27,9 +27,19 @@
     transition: all 0.25s;
     border: none;
     height: 75px;
-    width: 60px;
+    width: auto;
     background-color: transparent;
     color: #fff;
+
+    span {
+        font-size: 18px;
+        display: inline;
+        font-family: 'Quicksand', sans-serif;
+        font-weight: bolder;
+        position: relative;
+        top: -5px;
+        padding-left: 20px;
+    }
 }
 
 .is-locked {
