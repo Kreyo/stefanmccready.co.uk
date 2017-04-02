@@ -2,25 +2,18 @@
     height: 75px;
     line-height: 75px;
     background-color: transparent;
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    z-index: 10;
     width: 100%;
     padding-bottom: 17px;
-
 }
 
 .icon-bar__left {
     float: left;
-    padding-left: 20px;
     padding-top: 10px;
 }
 
 .icon-bar__right {
     float: right;
     text-align: right;
-    padding-right: 20px;
     padding-top: 10px;
 
     i {
