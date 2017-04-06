@@ -1,5 +1,5 @@
 .panel {
-    height: 100vh;
+    height: 70vh;
     padding: 0 25px;
     position: relative;
     background-color: #fff;
@@ -10,6 +10,14 @@
             top: 35%;
         }
     }
+}
+
+.panel__heading {
+    font-size: 70px;
+}
+
+.panel__subheading {
+    font-size: 40px;
 }
 
 .panel--alternative {
@@ -24,20 +32,17 @@
 }
 
 .panel__content {
-    width: 100%;
     line-height: 1.15;
 }
 
 .panel__btn {
-    text-align: left;
     height: 50px;
     width: 50px;
     border-radius: 50%;
     position: absolute;
     bottom: 30px;
-    left: 50%;
     margin-left: -25px;
-}
+    }
 
 .panel-list {
     list-style-type: none;
@@ -50,36 +55,5 @@
 
     @include mq($from: tablet) {
         display: inline;
-    }
-}
-.panel__description {
-    width: 100%;
-    margin: 0 auto;
-
-    @include mq($from: tablet) {
-        width: 40%;
-    }
-}
-
-.panel__image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-}
-
-.panel__logo {
-    height: 150px;
-    width: 150px;
-    background-color: #af1e2d;
-    margin-left: -43.5px;
-    position: absolute;
-    left: 50%;
-    top: 0px;
-
-    img {
-        width: 80px;
-        height: 50px;
-        position: relative;
-        top: 35px;
     }
 }
