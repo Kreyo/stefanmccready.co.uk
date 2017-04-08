@@ -1,5 +1,5 @@
 .panel {
-    height: 100vh;
+    height: 70vh;
     padding: 0 25px;
     position: relative;
     background-color: #fff;
@@ -9,8 +9,23 @@
         .panel__container {
             top: 35%;
         }
+    }
+}
 
-        height: 100vh;
+.panel__heading {
+    font-size: 32px;
+
+    @include mq($from: tablet){
+         font-size: 50px;
+    }
+}
+
+.panel__subheading {
+    font-size: 20px;
+    margin: 0 30px;
+
+    @include mq($from: tablet){
+         font-size: 30px;
     }
 }
 
@@ -26,15 +41,24 @@
 }
 
 .panel__content {
-    width: 100%;
     line-height: 1.15;
 }
 
+.panel__btn-set {
+    .btn {
+        width: 230px;
+        margin-right: 10px;
+        margin-bottom: 15px;
+    }
+}
+
 .panel__btn {
-    text-align: left;
     height: 50px;
     width: 50px;
     border-radius: 50%;
+    position: absolute;
+    bottom: 30px;
+    margin-left: -25px;
 }
 
 .panel-list {
