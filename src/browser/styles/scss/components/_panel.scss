@@ -1,5 +1,5 @@
 .panel {
-    height: 70vh;
+    height: 80vh;
     padding: 0 25px;
     position: relative;
     background-color: #fff;
@@ -22,7 +22,6 @@
 
 .panel__subheading {
     font-size: 20px;
-    margin: 0 30px;
 
     @include mq($from: tablet){
          font-size: 30px;
@@ -46,9 +45,16 @@
 
 .panel__btn-set {
     .btn {
-        width: 230px;
-        margin-right: 10px;
+        width: 230px; 
         margin-bottom: 15px;
+
+        @include mq($from: tablet) {
+            margin-right: 1em;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
     }
 }
 
@@ -80,7 +86,7 @@
     margin: 0 auto;
 
     @include mq($from: tablet) {
-        width: 40%;
+        width: 40%;;
     }
 }
 
@@ -89,10 +95,9 @@
         display: block;
         border-bottom: 2px solid #fff;
         font-weight: bolder;
-        padding-bottom: 5px;
+        padding: 0.5em 0;
+        width:190px;
         margin: 0 auto;
-        margin-bottom: 15px;
-        width: 175px;
 
         &:last-child {
             border-bottom: none;
@@ -100,9 +105,10 @@
         
         @include mq($from: tablet) {
             border-right: 2px solid #fff;
-            padding: 0 15px;
             display: inline-block;
             border-bottom: none;
+            padding: 0 0.5em;
+            width: auto;
 
             &:last-child {
                 border-right: none;
