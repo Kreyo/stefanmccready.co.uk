@@ -50,6 +50,7 @@
         display: inline;
     }
 }
+
 .panel__description {
     width: 100%;
     margin: 0 auto;
@@ -59,8 +60,29 @@
     }
 }
 
-.panel__image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
+.panel__heading-set {
+    p {
+        display: block;
+        border-bottom: 2px solid #fff;
+        font-weight: bolder;
+        padding-bottom: 5px;
+        margin: 0 auto;
+        margin-bottom: 15px;
+        width: 175px;
+
+        &:last-child {
+            border-bottom: none;
+        }
+        
+        @include mq($from: tablet) {
+            border-right: 2px solid #fff;
+            padding: 0 15px;
+            display: inline-block;
+            border-bottom: none;
+
+            &:last-child {
+                border-right: none;
+            }
+        }
+    }
 }
