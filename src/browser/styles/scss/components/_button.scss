@@ -39,7 +39,11 @@
 
     i {
         position: relative;
-        top: -1px;
-        left: 1px;
+        top: -4px;
+        left: 0px;
+    }
+
+    &:hover {
+        color: #fff;
     }
 }

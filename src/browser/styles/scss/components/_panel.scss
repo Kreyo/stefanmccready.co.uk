@@ -1,11 +1,12 @@
 .panel {
-    height: 80vh;
     padding: 0 25px;
     position: relative;
     background-color: #fff;
     color: #af1e2d;
+    height: 85vh;
 
     &:first-child {
+        
         .panel__container {
             top: 35%;
         }
@@ -63,8 +64,10 @@
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    bottom: 30px;
+    bottom: -28px;
     margin-left: -25px;
+    background-color: #af1e2d !important;
+    z-index:3;
 }
 
 .panel-list {
@@ -115,4 +118,10 @@
             }
         }
     }
+}
+
+.panel__image {
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
 }
