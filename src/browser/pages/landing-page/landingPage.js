@@ -25,7 +25,7 @@ const LandingPage = () =>
                         <p className="panel__subheading">DEVELOPER</p>
                         <p className="panel__subheading">CAR BORE</p>
                     </div>
-                    <div className="panel__btn-set">
+                    <div className="panel__btn-set margin-top-large">
                         <button className="btn btn--alternative">DOWNLOAD MY RESUME</button>
                         <button className="btn btn--alternative">CONTACT ME</button>
                     </div>
