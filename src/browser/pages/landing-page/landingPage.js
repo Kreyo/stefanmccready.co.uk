@@ -19,11 +19,15 @@ const LandingPage = () =>
             </div>
             <div className="panel__container">
                 <div>
-                    <h1 className="panel__heading margin-bottom-small">STEFAN MCCREADY</h1>
-                    <h2 className="panel__subheading margin-bottom">DEVELOPER | DESIGNER | OBSESSED F1 FAN</h2>
+                    <h1 className="panel__heading margin-bottom">STEFAN MCCREADY</h1>
+                    <h2 className="panel__subheading margin-bottom-large">DESIGNER | DEVELOPER | CAR BORE</h2>
+                    <div className="panel__btn-set">
+                        <button className="btn btn--alternative">DOWNLOAD MY RESUME</button>
+                        <button className="btn btn--alternative">CONTACT ME</button>
+                    </div>
                 </div>
             </div>
-            <button className="btn btn--alternative btn--circle panel__btn"><i className="fa fa-arrow-down" aria-hidden="true"></i></button>
+            
         </div>
         <div className="panel text-center">
             <div className="panel__container">
