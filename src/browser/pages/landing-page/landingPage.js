@@ -26,12 +26,12 @@ const LandingPage = () =>
                         <p className="panel__subheading">CAR BORE</p>
                     </div>
                     <div className="panel__btn-set margin-top-large">
-                        <button className="btn btn--alternative">DOWNLOAD MY RESUME</button>
+                        <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
                         <button className="btn btn--alternative">CONTACT ME</button>
                     </div>
                 </div>
             </div>
-            <button className="btn btn--alternative btn--circle panel__btn"><i className="fa fa-chevron-down" aria-hidden="true"></i></button>
+            <button className="btn btn--standard btn--circle panel__btn"><i className="fa fa-chevron-down" aria-hidden="true"></i></button>
         </div>
         <div className="panel text-center">
             <div className="panel__container">
