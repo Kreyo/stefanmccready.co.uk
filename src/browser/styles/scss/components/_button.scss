@@ -1,13 +1,13 @@
 .btn {
     padding: 15px;
     font-size: 16px;
-    background-color: transparent;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
 }
 
 .btn--standard {
     border: 2px solid #af1e2d;
+    background-color: #fff;
     transition: all 0.5s;
     color: #af1e2d;
 
@@ -21,6 +21,7 @@
 
 .btn--alternative {
     border: 3px solid #fff;
+    background-color: #af1e2d;
     transition: all 0.5s;
     color: #fff;
 
@@ -39,11 +40,11 @@
 
     i {
         position: relative;
+        text-align: center;
         top: -4px;
-        left: 0px;
     }
 
     &:hover {
-        color: #fff;
+        border-color: #fff;
     }
 }
