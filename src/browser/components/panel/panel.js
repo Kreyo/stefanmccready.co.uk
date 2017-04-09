@@ -47,4 +47,11 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
     );
 };
 
+Panel.propTypes = {
+    children: PropTypes.any,
+    modifier: PropTypes.string,
+    advanceButton: PropTypes.bool,
+    iconBar: PropTypes.bool,
+}
+
 export default Panel;
