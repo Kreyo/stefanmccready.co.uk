@@ -28,6 +28,11 @@ module.exports = {
             {
                 test: /\.svg$/,
                 loader: 'svg-inline'
+            },
+            {
+                test: /\.json$/,
+                include: /node_modules/,
+                loader: 'json-loader'
             }
         ]
     },
