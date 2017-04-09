@@ -38,6 +38,7 @@
     "concurrently": "^2.2.0",
     "css-loader": "^0.25.0",
     "enzyme": "^2.8.0",
+    "expect": "^1.20.2",
     "express": "^4.14.0",
     "extract-text-webpack-plugin": "^1.0.1",
     "file-loader": "^0.9.0",
@@ -101,8 +102,8 @@
     "stylelint": "^7.10.1"
   },
   "pre-commit": [
-    "stylelint",
     "lint",
+    "stylelint",
     "test"
   ]
 }

@@ -1,5 +1,6 @@
 import React from 'react';
-import { shallow, describe, it, expect } from 'enzyme';
+import { shallow } from 'enzyme';
+import { expect } from 'expect';
 import Panel from '../panel';
 
 describe('Panel', () => {
