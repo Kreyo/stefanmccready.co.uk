@@ -10,9 +10,7 @@
     "test": "./node_modules/.bin/karma start",
     "start": "node ./src/universal/index.js",
     "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
-    "lint": "eslint ./src ",
-    "stylelint": "stylelint ./src/browser/styles/scss/**/*.scss --fix scss",
-    "validate": "npm ls"
+    "lint": "eslint ./src stylelint ./src/browser/styles/scss/**/*.scss --fix scss",
   },
   "repository": {
     "type": "git",
@@ -103,7 +101,6 @@
   },
   "pre-commit": [
     "lint",
-    "stylelint",
     "test"
   ]
 }
