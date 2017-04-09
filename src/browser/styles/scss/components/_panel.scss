@@ -7,7 +7,7 @@
     text-align: center;
 
     &:first-child {
-        
+
         .panel__container {
             top: 35%;
         }
@@ -17,7 +17,7 @@
 .panel__heading {
     font-size: 32px;
 
-    @include mq($from: tablet){
+    @include mq($from: tablet) {
          font-size: 50px;
     }
 }
@@ -25,7 +25,7 @@
 .panel__subheading {
     font-size: 20px;
 
-    @include mq($from: tablet){
+    @include mq($from: tablet) {
          font-size: 30px;
     }
 }
@@ -47,7 +47,7 @@
 
 .panel__btn-set {
     .btn {
-        width: 230px; 
+        width: 230px;
         margin-bottom: 15px;
 
         @include mq($from: tablet) {
@@ -67,7 +67,7 @@
     position: absolute;
     bottom: -25px;
     margin-left: -25px;
-    z-index:10;
+    z-index: 10;
 }
 
 .panel-list {
@@ -99,14 +99,15 @@
         border-bottom: 2px solid #fff;
         font-weight: bolder;
         padding: 0.5em 0;
-        width:190px;
+        width: 190px;
         margin: 0 auto;
 
         &:last-child {
             border-bottom: none;
         }
-        
+
         @include mq($from: tablet) {
+
             border-right: 2px solid #fff;
             display: inline-block;
             border-bottom: none;
