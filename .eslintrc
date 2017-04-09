@@ -14,7 +14,8 @@
     "__TEST__": false,
     "__INT_TEST__": false,
     "__BROWSER_BUILD__": false,
-    "__SERVER_BUILD__": false
+    "__SERVER_BUILD__": false,
+    "expect": false
   },
   "plugins": [
     "flowtype",
