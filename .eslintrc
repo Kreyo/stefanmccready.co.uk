@@ -24,7 +24,7 @@
     // Validate Indentation
     "indent": [2, 4, {"SwitchCase": 1}],
     "no-console": ["error"],
-    "linebreak-style": ["error", "windows"],
+    "linebreak-style": 0,
 
     // Limit Maximum Length of Line
     "max-len": [2, 200, 2, {
