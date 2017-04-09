@@ -5,16 +5,16 @@ import Panel from '../../components/panel/panel';
 const LandingPage = () =>
     <div>
         <Panel modifier="alternative" advanceButton iconBar>
-                    <h1 className="panel__heading margin-bottom margin-top-small">STEFAN MCCREADY</h1>
-                    <div className="panel__heading-set margin-bottom">
-                        <p className="panel__subheading">DESIGNER</p>
-                        <p className="panel__subheading">DEVELOPER</p>
-                        <p className="panel__subheading">CAR BORE</p>
-                    </div>
-                    <div className="panel__btn-set margin-top-large">
-                        <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
-                        <button className="btn btn--alternative">CONTACT ME</button>
-                    </div>
+            <h1 className="panel__heading margin-bottom margin-top-small">STEFAN MCCREADY</h1>
+            <div className="panel__heading-set margin-bottom">
+                <p className="panel__subheading">DESIGNER</p>
+                <p className="panel__subheading">DEVELOPER</p>
+                <p className="panel__subheading">CAR BORE</p>
+            </div>
+            <div className="panel__btn-set margin-top-large">
+                <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
+                <button className="btn btn--alternative">CONTACT ME</button>
+            </div>
         </Panel>
         <Panel modifier="standard" advanceButton>
             <h1 className="heading-medium margin-bottom-large">HELLO | BONJOUR | 你好</h1>
