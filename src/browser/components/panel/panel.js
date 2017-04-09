@@ -32,7 +32,7 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
     );
 
     return(
-        <div className={classNames}>
+        <article className={classNames}>
             { iconBar ? IconBarComonent : null }
             <div className="panel__container">
                 <div className="panel__content">
@@ -44,7 +44,7 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
                     <i className="fa fa-chevron-down" aria-hidden="true"></i>
                 </button> : null 
             }
-        </div>        
+        </article>        
     );
 };
 

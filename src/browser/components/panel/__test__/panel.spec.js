@@ -17,4 +17,30 @@ describe('Panel', () => {
     });
     expect(component.find('h1').text()).to.equal('Test content!');
   });
+
+  it('should render the correct modifier', () => {
+    render({
+      children: panelContent,
+      modifier: "alternative"
+    });
+    expect(component.find('article').hasClass('panel--alternative')).to.equal(true);
+  });
+
+  it('should render an advance button is specified', () => {
+    render({
+      children: panelContent,
+      modifier: "alternative",
+      advanceButton: true
+    });
+    expect(component.find('i').hasClass('fa-chevron-down')).to.equal(true);
+  });
+
+  it('should render an icon bar when specified', () => {
+    render({
+      children: panelContent,
+      modifier: "alternative",
+      iconBar: true
+    });
+    expect(component.find('span').text()).to.equal('MENU');
+  });
 });
