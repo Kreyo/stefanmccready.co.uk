@@ -10,7 +10,7 @@ const IconBar = ({ socialLogo, socialLink, menuText }) =>
             </button>
         </div>
         <div className="icon-bar__right">
-            <a href={socialLink} className="icon-bar__icon" target="_blank">
+            <a href={socialLink} className="icon-bar__icon" target="_blank" rel="noopener noreferrer">
                 <i className={`fa fa-${socialLogo}`} aria-hidden="true" />
             </a>
         </div>
