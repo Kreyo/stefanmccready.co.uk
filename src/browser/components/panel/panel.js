@@ -1,6 +1,8 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import IconBar from '../icon-bar/iconBar';
+
 const Panel = ({ children, modifier, advanceButton, iconBar }) => {
     let advanceModifier;
 
@@ -14,25 +16,11 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
 
-    const IconBarComonent = (
-        <div className="icon-bar">
-            <div className="icon-bar__left">
-                <button className="icon-bar__icon">
-                    <i className="fa fa-bars" aria-hidden="true" />
-                    <span>MENU</span>
-                </button>
-            </div>
-            <div className="icon-bar__right">
-                <button className="icon-bar__icon">
-                    <i className="fa fa-linkedin" aria-hidden="true" />
-                </button>
-            </div>
-        </div>
-    );
-
     return (
         <article className={classNames}>
-            { iconBar ? IconBarComonent : null }
+            { iconBar ?
+                <IconBar menuText="MENU" socialLink="https://www.linkedin.com/in/stefan-mccready-11507297/" socialLogo="linkedin" /> : null
+            }
             <div className="panel__container">
                 <div className="panel__content">
                     {children}

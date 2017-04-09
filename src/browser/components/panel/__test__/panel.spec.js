@@ -35,13 +35,4 @@ describe('Panel', () => {
         });
         expect(component.find('i').hasClass('fa-chevron-down')).to.equal(true);
     });
-
-    it('should render an icon bar when specified', () => {
-        render({
-            children: panelContent,
-            modifier: 'alternative',
-            iconBar: true,
-        });
-        expect(component.find('span').text()).to.equal('MENU');
-    });
 });
