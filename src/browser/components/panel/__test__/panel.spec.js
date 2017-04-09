@@ -1,46 +1,46 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, describe, it, expect } from 'enzyme';
 import Panel from '../panel';
 
 describe('Panel', () => {
-  let component;
+    let component;
 
-  const render = (props) => {
-    component = shallow(<Panel {...props} />);
-  };
+    const render = (props) => {
+        component = shallow(<Panel {...props} />);
+    };
 
-  const panelContent = (<h1>Test content!</h1>);
+    const panelContent = (<h1>Test content!</h1>);
 
-  it('should render panel content', () => {
-    render({
-      children: panelContent
+    it('should render panel content', () => {
+        render({
+            children: panelContent,
+        });
+        expect(component.find('h1').text()).to.equal('Test content!');
     });
-    expect(component.find('h1').text()).to.equal('Test content!');
-  });
 
-  it('should render the correct modifier', () => {
-    render({
-      children: panelContent,
-      modifier: "alternative"
+    it('should render the correct modifier', () => {
+        render({
+            children: panelContent,
+            modifier: 'alternative',
+        });
+        expect(component.find('article').hasClass('panel--alternative')).to.equal(true);
     });
-    expect(component.find('article').hasClass('panel--alternative')).to.equal(true);
-  });
 
-  it('should render an advance button is specified', () => {
-    render({
-      children: panelContent,
-      modifier: "alternative",
-      advanceButton: true
+    it('should render an advance button is specified', () => {
+        render({
+            children: panelContent,
+            modifier: 'alternative',
+            advanceButton: true,
+        });
+        expect(component.find('i').hasClass('fa-chevron-down')).to.equal(true);
     });
-    expect(component.find('i').hasClass('fa-chevron-down')).to.equal(true);
-  });
 
-  it('should render an icon bar when specified', () => {
-    render({
-      children: panelContent,
-      modifier: "alternative",
-      iconBar: true
+    it('should render an icon bar when specified', () => {
+        render({
+            children: panelContent,
+            modifier: 'alternative',
+            iconBar: true,
+        });
+        expect(component.find('span').text()).to.equal('MENU');
     });
-    expect(component.find('span').text()).to.equal('MENU');
-  });
 });

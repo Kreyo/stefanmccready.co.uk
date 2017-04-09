@@ -2,7 +2,7 @@
     padding: 15px;
     font-size: 16px;
     font-weight: bold;
-    font-family: 'Quicksand', sans-serif;
+    font-family: Quicksand, sans-serif;
 }
 
 .btn--standard {
@@ -11,7 +11,7 @@
     transition: all 0.5s;
     color: #af1e2d;
 
-     &:hover {
+    &:hover {
         outline: none;
         cursor: pointer;
         background-color: #af1e2d;
