@@ -1,5 +1,7 @@
 import React from 'react';
 import Panel from '../../components/panel/panel';
+import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
+import { skillsList, breakdownCopy } from './constants';
 
 const LandingPage = () =>
     <div>
@@ -16,31 +18,18 @@ const LandingPage = () =>
             </div>
         </Panel>
         <Panel modifier="standard" advanceButton>
-            <h1 className="heading-medium margin-bottom-large">HELLO | BONJOUR | 你好</h1>
+            <h2 className="heading-medium margin-bottom-large">HELLO | BONJOUR | 你好</h2>
             <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} alt="Stefan McCready" />
             <p className="text-large panel__description margin-bottom">
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
             </p>
         </Panel>
         <Panel modifier="alternative" advanceButton>
-            <h1 className="heading-medium margin-bottom-large">THINGS I DO</h1>
-            <p className="text-large panel__description margin-bottom">
-                5 years as a bedroom coder and working in the industry has taight me a few things, below is the simplest way to show the some of the skills that I do have.
-            </p>
-            <div className="section group">
-                <div className="col span_1_of_3">
-                    Hello
-                </div>
-                <div className="col span_1_of_3">
-                    Hello
-                </div>
-                <div className="col span_1_of_3">
-                    Hello
-                </div>
-            </div>
+            <h2 className="heading-medium margin-bottom-large">THINGS I DO</h2>
+            <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
         <Panel modifier="standard">
-            <h1 className="heading-medium margin-bottom-large">CONTACT-Y STUFF</h1>
+            <h2 className="heading-medium margin-bottom-large">CONTACT-Y STUFF</h2>
             <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} alt="Stefan McCready" />
             <p className="text-large panel__description margin-bottom">
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.

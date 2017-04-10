@@ -1,0 +1,28 @@
+.skills-breakdown {
+
+    .fa {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+}
+
+.skills-breakdown__heading {
+    margin-bottom: 15px;
+}
+
+.skills-breakdown__text {
+    margin-bottom: 15px;
+    display: none;
+
+    @include mq($from: desktop) {
+        display: block;
+    }
+}
+
+.skills-breakdown__section {
+    margin-bottom: 15px;
+
+    &::last-child {
+        margin-bottom: 0;
+    }
+}

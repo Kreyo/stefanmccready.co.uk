@@ -4,6 +4,7 @@
     background-color: #fff;
     color: #af1e2d;
     height: 85vh;
+    max-height: 100vh;
     text-align: center;
 
     &:first-child {
@@ -89,7 +90,7 @@
     margin: 0 auto;
 
     @include mq($from: tablet) {
-        width: 40%;;
+        width: 40%;
     }
 }
 
