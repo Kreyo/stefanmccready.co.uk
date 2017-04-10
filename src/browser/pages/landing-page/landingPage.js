@@ -8,6 +8,8 @@ const skillsList = [
     { icon: 'universal-access', title: 'ACCESSIBILITY' }
 ];
 
+const breakdownCopy = "5 years as a bedroom coder and working in the industry has taight me a few things, below is the simplest way to show the some of the skills that I do have:";
+
 const LandingPage = () =>
     <div>
         <Panel modifier="alternative" advanceButton iconBar>
@@ -31,7 +33,7 @@ const LandingPage = () =>
         </Panel>
         <Panel modifier="alternative" advanceButton>
             <h2 className="heading-medium margin-bottom-large">THINGS I DO</h2>
-            <SkillsBreakdown skillsArray={skillsList} />
+            <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
         <Panel modifier="standard">
             <h2 className="heading-medium margin-bottom-large">CONTACT-Y STUFF</h2>

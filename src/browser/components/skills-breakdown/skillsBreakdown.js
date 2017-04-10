@@ -15,7 +15,7 @@ const SkillsBreakdown = ({ skillsArray, breakdownText }) => {
     return(
         <div className="skills-breakdown">
             <p className="text-large panel__description margin-bottom skills-breakdown__text">
-                5 years as a bedroom coder and working in the industry has taight me a few things, below is the simplest way to show the some of the skills that I do have:
+                {breakdownText}
             </p>
             <div className="section group">
                 {skillsList}
