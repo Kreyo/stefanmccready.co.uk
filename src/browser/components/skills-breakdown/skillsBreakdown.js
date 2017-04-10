@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 const SkillsBreakdown = ({ skillsArray, breakdownText }) => {
     const skillsList = (
         skillsArray.map((skill, i) =>
-            <div className="col span_1_of_3 skills-breakdown__section">
+            <div className="col span_1_of_3 skills-breakdown__section" key={`skill-${skill.title}`}>
                 <i className={`fa fa-${skill.icon}`} aria-hidden="true" />
                 <p className="heading-small skills-breakdown__heading">{skill.title}</p>
             </div>
@@ -24,8 +24,8 @@ const SkillsBreakdown = ({ skillsArray, breakdownText }) => {
 };
 
 SkillsBreakdown.propTypes = {
-    skillsArray: PropTypes.array.isRequired,
+    skillsArray: PropTypes.arrayOf(PropTypes.object).isRequired,
     breakdownText: PropTypes.string.isRequired,
-}
+};
 
 export default SkillsBreakdown;
