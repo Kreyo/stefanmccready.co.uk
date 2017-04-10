@@ -14,7 +14,7 @@ const SkillsBreakdown = ({ skillsArray, breakdownText }) => {
 
     return(
         <div className="skills-breakdown">
-            <p className="text-large panel__description margin-bottom skills-breakdown__text">
+            <p className="text-large panel__description margin-bottom-large skills-breakdown__text">
                 {breakdownText}
             </p>
             <div className="section group">
