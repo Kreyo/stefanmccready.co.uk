@@ -27,12 +27,20 @@ describe('Panel', () => {
         expect(component.find('article').hasClass('panel--alternative')).to.equal(true);
     });
 
-    it('should render an advance button is specified', () => {
+    it('should render an advance button if one is specified', () => {
         render({
             children: panelContent,
             modifier: 'alternative',
             advanceButton: true,
         });
         expect(component.find('i').hasClass('fa-chevron-down')).to.equal(true);
+    });
+
+    it('should not render an advance button if one is not specified', () => {
+        render({
+            children: panelContent,
+            modifier: 'alternative',
+        });
+        expect(component.contains('i')).to.equal(false);
     });
 });

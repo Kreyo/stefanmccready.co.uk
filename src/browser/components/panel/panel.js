@@ -38,7 +38,7 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
 Panel.defaultProps = {
     children: '',
     modifier: 'standard',
-    advanceButton: true,
+    advanceButton: false,
     iconBar: false,
 };
 
