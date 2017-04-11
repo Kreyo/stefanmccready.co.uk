@@ -3,10 +3,17 @@ import PropTypes from 'prop-types';
 
 import IconBar from '../icon-bar/iconBar';
 
-const Panel = ({ children, modifier, advanceButton, iconBar }) => {
+const Panel = ({ children, modifier, advanceButton, iconBar, isNarrow }) => {
     let advanceModifier;
+    let narrowClassname;
 
-    const classNames = (`panel panel--${modifier}`);
+    if (isNarrow) {
+        narrowClassname = 'panel--narrow';
+    } else {
+        narrowClassname = '';
+    }
+
+    const classNames = (`panel panel--${modifier} ${narrowClassname}`);
 
     if (modifier === 'alternative') {
         advanceModifier = 'standard';
@@ -40,6 +47,7 @@ Panel.defaultProps = {
     modifier: 'standard',
     advanceButton: false,
     iconBar: false,
+    isNarrow: false,
 };
 
 Panel.propTypes = {
@@ -47,6 +55,7 @@ Panel.propTypes = {
     modifier: PropTypes.string,
     advanceButton: PropTypes.bool,
     iconBar: PropTypes.bool,
+    isNarrow: PropTypes.bool,
 };
 
 export default Panel;

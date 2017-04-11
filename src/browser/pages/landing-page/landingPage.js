@@ -28,7 +28,7 @@ const LandingPage = () =>
             <h2 className="panel__heading margin-bottom-large">THINGS I DO</h2>
             <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
-        <Panel modifier="standard">
+        <Panel modifier="standard" isNarrow>
             <h2 className="panel__heading margin-bottom-large">INTERESTED?</h2>
             <p className="panel__subheading panel__subheading--link margin-bottom">
                 hello@stefanmccready.co.uk
