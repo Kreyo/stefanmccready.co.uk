@@ -22,7 +22,7 @@
          font-size: 50px;
     }
 
-    @include mq($from: wide) {
+    @include mq($from: 1600px) {
          font-size: 68px;
     }
 }
@@ -34,7 +34,7 @@
          font-size: 30px;
     }
 
-    @include mq($from: wide) {
+    @include mq($from: 1600px) {
          font-size: 40px;
     }
 }
@@ -66,8 +66,8 @@
                 margin-right: 0;
             }
         }
-        
-        @include mq($from: wide) {
+
+        @include mq($from: 1600px) {
              font-size: 20px;
              width: 300px;
         }
@@ -106,7 +106,7 @@
         width: 40%;
     }
 
-    @include mq($from: wide) {
+    @include mq($from: 1600) {
         font-size: 22px;
     }
 }
@@ -144,7 +144,7 @@
     width: 200px;
     border-radius: 50%;
 
-    @include mq($from: wide) {
+    @include mq($from: 1600px) {
         height: 250px;
         width: 250px;
     }
