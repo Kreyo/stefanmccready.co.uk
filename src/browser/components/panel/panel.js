@@ -16,8 +16,6 @@ const Panel = ({ children, modifier, advanceButton, iconBar }) => {
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
 
-    console.log(advanceButton);
-
     return (
         <article className={classNames}>
             { iconBar ?
