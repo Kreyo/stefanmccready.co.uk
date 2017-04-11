@@ -39,6 +39,25 @@
     }
 }
 
+.panel__subheading--link {
+    width: 100%;
+    margin: 0 auto;
+
+    @include mq($from: tablet) {
+        width: 40%;
+    }
+
+    @include mq($from: 1600) {
+        font-size: 22px;
+    }
+    
+    &:hover {
+        text-decoration: underline;
+        cursor:pointer;
+        width: auto;
+    }
+}
+
 .panel--alternative {
     background-color: #af1e2d;
     color: #fff;
