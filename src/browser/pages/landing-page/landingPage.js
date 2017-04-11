@@ -28,11 +28,10 @@ const LandingPage = () =>
             <h2 className="panel__heading margin-bottom-large">THINGS I DO</h2>
             <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
-        <Panel modifier="standard">
-            <h2 className="panel__heading margin-bottom-large">CONTACT-Y STUFF</h2>
-            <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} alt="Stefan McCready" />
-            <p className="text-large panel__description margin-bottom">
-                My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
+        <Panel modifier="standard" isNarrow>
+            <h2 className="panel__heading margin-bottom-large">INTERESTED?</h2>
+            <p className="panel__subheading panel__subheading--link margin-bottom">
+                hello@stefanmccready.co.uk
             </p>
         </Panel>
     </div>;
