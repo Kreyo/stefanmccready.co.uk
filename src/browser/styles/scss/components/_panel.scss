@@ -51,10 +51,6 @@
         width: 40%;
     }
 
-    @include mq($from: 1600px) {
-        font-size: 22px;
-    }
-
     &:hover {
         text-decoration: underline;
         cursor:pointer;
