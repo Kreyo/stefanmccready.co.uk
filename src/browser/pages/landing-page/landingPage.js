@@ -10,7 +10,7 @@ const LandingPage = () =>
             <div className="panel__heading-set margin-bottom">
                 <p className="panel__subheading">DESIGNER</p>
                 <p className="panel__subheading">DEVELOPER</p>
-                <p className="panel__subheading">CAR BORE</p>
+                <p className="panel__subheading">MENTOR</p>
             </div>
             <div className="panel__btn-set margin-top-large">
                 <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
@@ -34,6 +34,19 @@ const LandingPage = () =>
                 hello@stefanmccready.co.uk
             </p>
         </Panel>
+        <footer>
+            <div className="section group">
+                <div className="col span_1_of_3 skills-breakdown__section">
+                    HELLO
+                </div>
+                <div className="col span_1_of_3 skills-breakdown__section">
+                    HELLO
+                </div>
+                <div className="col span_1_of_3 skills-breakdown__section">
+                    HELLO
+                </div>
+            </div>
+        </footer>
     </div>;
 
 export default LandingPage;
