@@ -1,0 +1,55 @@
+{
+    "footer": {
+        "legal": "All rights reserved to Stefan McCready ®2017",
+        "pageLinks": [
+            {
+                "linkTitle": "Portfolio",
+                "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+            },
+            {
+                "linkTitle": "Contact Me",
+                "linkUrl": "https://twitter.com/Stefan_McC_123"
+            },
+            {
+                "linkTitle": "About Me",
+                "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+            },
+            {
+                "linkTitle": "Hey!",
+                "linkUrl": "https://twitter.com/Stefan_McC_123"
+            }
+        ],
+        "footerSections": [
+            {
+                "title": "COUPLE OF DETAILS",
+                "links": [
+                    {
+                        "linkTitle": "hello@stefanmccready.co.uk",
+                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "icon": "envelope"
+                    },
+                    {
+                        "linkTitle": "07711043854",
+                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "icon": "phone"
+                    }
+                ] 
+            },
+            {
+                "title": "SOME SOCIAL STUFF",
+                "links": [
+                    {
+                        "linkTitle": "Instagram",
+                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "icon": "instagram"
+                    },
+                    {
+                        "linkTitle": "Twitter",
+                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "icon": "twitter"
+                    }
+                ] 
+            }
+        ]
+    }
+}

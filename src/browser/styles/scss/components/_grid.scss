@@ -4,6 +4,14 @@
 	margin: 0;
 }
 
+.section--narrow {
+	
+	@include mq($from: tablet) {
+		width: 50%;
+		margin: 0 auto;
+	}
+}
+
 .col {
 	display: block;
 	float: left;

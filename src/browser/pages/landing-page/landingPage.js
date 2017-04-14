@@ -1,6 +1,8 @@
 import React from 'react';
 import Panel from '../../components/panel/panel';
 import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
+import Footer from '../../components/footer/footerWrapper';
+import footerData from '../../config/footerData.json';
 import { skillsList, breakdownCopy } from './constants';
 
 const LandingPage = () =>
@@ -10,7 +12,7 @@ const LandingPage = () =>
             <div className="panel__heading-set margin-bottom">
                 <p className="panel__subheading">DESIGNER</p>
                 <p className="panel__subheading">DEVELOPER</p>
-                <p className="panel__subheading">CAR BORE</p>
+                <p className="panel__subheading">MENTOR</p>
             </div>
             <div className="panel__btn-set margin-top-large">
                 <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
@@ -24,7 +26,7 @@ const LandingPage = () =>
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
             </p>
         </Panel>
-        <Panel modifier="alternative" advanceButton>
+        <Panel modifier="alternative" advan nceButton>
             <h2 className="panel__heading margin-bottom-large">THINGS I DO</h2>
             <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
@@ -34,6 +36,7 @@ const LandingPage = () =>
                 hello@stefanmccready.co.uk
             </p>
         </Panel>
+        <Footer footerData={footerData.footer} />
     </div>;
 
 export default LandingPage;
