@@ -29,10 +29,8 @@ module.exports = {
                 test: /\.svg$/,
                 loader: 'svg-inline'
             },
-            {
-                test: /\.json$/,
-                include: /node_modules/,
-                loader: 'json-loader'
+            {   test: /\.json$/, 
+                loader: "json-loader" 
             }
         ]
     },

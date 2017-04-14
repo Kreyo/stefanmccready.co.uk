@@ -1,7 +1,11 @@
 import React from 'react';
 import Panel from '../../components/panel/panel';
 import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
+import Footer from '../../components/footer/footerWrapper';
+import footerJSON from '../../config/footerData.json';
 import { skillsList, breakdownCopy } from './constants';
+
+const footerData = (footerJSON.footer);
 
 const LandingPage = () =>
     <div>
@@ -34,19 +38,7 @@ const LandingPage = () =>
                 hello@stefanmccready.co.uk
             </p>
         </Panel>
-        <footer>
-            <div className="section group">
-                <div className="col span_1_of_3 skills-breakdown__section">
-                    HELLO
-                </div>
-                <div className="col span_1_of_3 skills-breakdown__section">
-                    HELLO
-                </div>
-                <div className="col span_1_of_3 skills-breakdown__section">
-                    HELLO
-                </div>
-            </div>
-        </footer>
+        <Footer footerData={footerData} />
     </div>;
 
 export default LandingPage;

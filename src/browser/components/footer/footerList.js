@@ -1,25 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const footerList = ({ listHeader, listItems }) => {
+const FooterList = ({ listHeader, listItems }) => {
 
-    const listData = (
-        listItems.map((listItem, i) =>
-            <li>{listItem.text}</li>
+    const linkList = (
+        listItems.map((link, i) =>
+            <li><a href={link.linkUrl}>{link.linkTitle}</a></li>
         )
     );
-    
+
     return (
         <div className="footer__list">
-            <h3 classNames="heading-small">{listHeader}</h3>
+            <h3 className="heading-small">{listHeader}</h3>
             <ul>
-                {listData}
+                {linkList}
             </ul>
         </div>
     );
 };
 
-footer.propTypes = {
+FooterList.propTypes = {
     listHeader: PropTypes.string.isRequired,
     listItems: PropTypes.arrayOf(PropTypes.string),
-}
+};
+
+export default FooterList;

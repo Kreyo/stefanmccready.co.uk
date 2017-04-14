@@ -1,13 +1,27 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import FooterList from './footerList';
 
-import footerList from './footerList';
+const Footer = ({ footerData, pageDate }) => {
+    const legal = (footerData.legal);
 
-const footer = ({ footerData, pageDate }) => {
-    
+    const footerSections = (
+        footerData.footerSections.map((footerSection, i) =>
+            <FooterList listItems={footerSection.links} listHeader={footerSection.title} />
+        )
+    );
+
+    return (
+        <div>
+            <p>{legal}</p>
+            {footerSections}
+        </div>
+    );
 };
 
-footer.propTypes = {
+Footer.propTypes = {
     footerDate: PropTypes.arrayOf(PropTypes.object),
     date: PropTypes.string,
-}
+};
+
+export default Footer;
