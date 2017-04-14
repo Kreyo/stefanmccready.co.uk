@@ -2,10 +2,8 @@ import React from 'react';
 import Panel from '../../components/panel/panel';
 import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
 import Footer from '../../components/footer/footerWrapper';
-import footerJSON from '../../config/footerData.json';
+import footerData from '../../config/footerData.json';
 import { skillsList, breakdownCopy } from './constants';
-
-const footerData = (footerJSON.footer);
 
 const LandingPage = () =>
     <div>
@@ -28,7 +26,7 @@ const LandingPage = () =>
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
             </p>
         </Panel>
-        <Panel modifier="alternative" advanceButton>
+        <Panel modifier="alternative" advan nceButton>
             <h2 className="panel__heading margin-bottom-large">THINGS I DO</h2>
             <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>
@@ -38,7 +36,7 @@ const LandingPage = () =>
                 hello@stefanmccready.co.uk
             </p>
         </Panel>
-        <Footer footerData={footerData} />
+        <Footer footerData={footerData.footer} />
     </div>;
 
 export default LandingPage;

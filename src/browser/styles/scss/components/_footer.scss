@@ -1,0 +1,40 @@
+.footer {
+    width: 100%;
+    color: #fff;
+    background-color: #af1e2d;
+}
+
+.footer__bar {
+    padding: 25px 0;
+    background-color: #9d1b28;
+}
+
+.footer__list {
+    li {
+        padding: 15px 0;
+    }
+    
+    a {
+        color: #fff;
+    }
+}
+
+.footer__page-list {
+    margin: 0 auto;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.footer__page-list__item {
+    padding: 15px 0;
+
+    a {
+        color: #fff;
+        text-decoration: none; 
+    }
+
+    @include mq($from: tablet) {
+        display: inline;
+        padding: 0 25px;
+    }
+}

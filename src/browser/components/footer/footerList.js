@@ -5,13 +5,13 @@ const FooterList = ({ listHeader, listItems }) => {
 
     const linkList = (
         listItems.map((link, i) =>
-            <li><a href={link.linkUrl}>{link.linkTitle}</a></li>
+            <li><i className={`fa fa-${link.icon} margin-right-small`} /><a href={link.linkUrl}>{link.linkTitle}</a></li>
         )
     );
 
     return (
-        <div className="footer__list">
-            <h3 className="heading-small">{listHeader}</h3>
+        <div className="footer__list margin-bottom-small">
+            <h3 className="heading-small margin-bottom">{listHeader}</h3>
             <ul>
                 {linkList}
             </ul>

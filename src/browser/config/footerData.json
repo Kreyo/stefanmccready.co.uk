@@ -1,30 +1,52 @@
 {
     "footer": {
-        "legal": "Example Legal",
+        "legal": "All rights reserved to Stefan McCready ®2017",
+        "pageLinks": [
+            {
+                "linkTitle": "Portfolio",
+                "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+            },
+            {
+                "linkTitle": "Contact Me",
+                "linkUrl": "https://twitter.com/Stefan_McC_123"
+            },
+            {
+                "linkTitle": "About Me",
+                "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+            },
+            {
+                "linkTitle": "Hey!",
+                "linkUrl": "https://twitter.com/Stefan_McC_123"
+            }
+        ],
         "footerSections": [
             {
-                "title": "Section 1",
+                "title": "COUPLE OF DETAILS",
                 "links": [
                     {
-                        "linkTitle": "Facebook",
-                        "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+                        "linkTitle": "hello@stefanmccready.co.uk",
+                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "icon": "envelope"
                     },
                     {
-                        "linkTitle": "Twitter",
-                        "linkUrl": "https://twitter.com/Stefan_McC_123"
+                        "linkTitle": "07711043854",
+                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "icon": "phone"
                     }
                 ] 
             },
             {
-                "title": "Section 2",
+                "title": "SOME SOCIAL STUFF",
                 "links": [
                     {
-                        "linkTitle": "Facebook",
-                        "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+                        "linkTitle": "Instagram",
+                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "icon": "instagram"
                     },
                     {
                         "linkTitle": "Twitter",
-                        "linkUrl": "https://twitter.com/Stefan_McC_123"
+                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "icon": "twitter"
                     }
                 ] 
             }
