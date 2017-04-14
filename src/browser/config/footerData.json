@@ -1,0 +1,35 @@
+{
+    "footer": {
+        "legal": "Example Legal",
+		"footerData": {
+			"footerSection": [
+                {
+                    "title": "Section 1",
+                    "links": [
+                        {
+                            "linkTitle": "Facebook",
+                            "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+                        },
+                        {
+                            "linkTitle": "Twitter",
+                            "linkUrl": "https://twitter.com/Stefan_McC_123"
+                        }
+                    ] 
+                },
+                {
+                    "title": "Section 2",
+                    "links": [
+                        {
+                            "linkTitle": "Facebook",
+                            "linkUrl": "https://www.facebook.com/stefan.mccready.9"
+                        },
+                        {
+                            "linkTitle": "Twitter",
+                            "linkUrl": "https://twitter.com/Stefan_McC_123"
+                        }
+                    ] 
+                }
+            ]
+        }
+    }
+}
