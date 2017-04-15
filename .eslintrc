@@ -26,6 +26,7 @@
     "indent": [2, 4, {"SwitchCase": 1}],
     "no-console": ["error"],
     "linebreak-style": 0,
+    "no-else-return": 0,
 
     // Limit Maximum Length of Line
     "max-len": [2, 200, 2, {
