@@ -13,9 +13,14 @@
     li {
         padding: 15px 0;
     }
-    
+
     a {
         color: #fff;
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 }
 
@@ -30,7 +35,11 @@
 
     a {
         color: #fff;
-        text-decoration: none; 
+        text-decoration: none;
+
+        &:hover {
+            text-decoration: underline;
+        }
     }
 
     @include mq($from: tablet) {

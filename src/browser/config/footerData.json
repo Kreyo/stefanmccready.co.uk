@@ -22,30 +22,28 @@
         "footerSections": [
             {
                 "title": "COUPLE OF DETAILS",
-                "links": [
+                "details": [
                     {
-                        "linkTitle": "hello@stefanmccready.co.uk",
-                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "detailTitle": "hello@stefanmccready.co.uk",
                         "icon": "envelope"
                     },
                     {
-                        "linkTitle": "07711043854",
-                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "detailTitle": "07711043854",
                         "icon": "phone"
                     }
                 ] 
             },
             {
                 "title": "SOME SOCIAL STUFF",
-                "links": [
+                "details": [
                     {
-                        "linkTitle": "Instagram",
-                        "linkUrl": "https://www.facebook.com/stefan.mccready.9",
+                        "detailTitle": "Instagram",
+                        "detailUrl": "https://www.facebook.com/stefan.mccready.9",
                         "icon": "instagram"
                     },
                     {
-                        "linkTitle": "Twitter",
-                        "linkUrl": "https://twitter.com/Stefan_McC_123",
+                        "detailTitle": "Twitter",
+                        "detailUrl": "https://twitter.com/Stefan_McC_123",
                         "icon": "twitter"
                     }
                 ] 

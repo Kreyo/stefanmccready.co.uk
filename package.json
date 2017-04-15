@@ -13,6 +13,11 @@
     "lint": "eslint ./src",
     "stylelint": "stylelint ./src/browser/styles/scss/**/*.scss --syntax scss"
   },
+  "pre-commit": [
+    "lint",
+    "stylelint",
+    "test"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/StefanMcCready/stefanmccready.co.uk.git"
@@ -101,10 +106,5 @@
     "react-test-renderer": "^15.5.4",
     "responsive-loader": "^0.7.0",
     "stylelint": "^7.10.1"
-  },
-  "pre-commit": [
-    "lint",
-    "stylelint",
-    "test"
-  ]
+  }
 }
