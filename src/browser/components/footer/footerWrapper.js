@@ -2,11 +2,11 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import FooterList from './footerList';
 
-const Footer = ({ footerData, pageDate }) => {
+const Footer = ({ footerData }) => {
     const legal = (footerData.legal);
 
     const footerSections = (
-        footerData.footerSections.map((footerSection, i) =>
+        footerData.footerSections.map((footerSection) =>
             <div className="col span_1_of_2">
                 <FooterList listItems={footerSection.details} listHeader={footerSection.title} />
             </div>
@@ -14,7 +14,7 @@ const Footer = ({ footerData, pageDate }) => {
     );
 
     const pageLinkList = (
-        footerData.pageLinks.map((pageLink, i) =>
+        footerData.pageLinks.map((pageLink) =>
             <li className="footer__page-list__item"><a href={pageLink.linkUrl}>{pageLink.linkTitle}</a></li>
         )
     );
@@ -37,8 +37,7 @@ const Footer = ({ footerData, pageDate }) => {
 };
 
 Footer.propTypes = {
-    footerDate: PropTypes.arrayOf(PropTypes.object),
-    date: PropTypes.string,
+    footerData: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default Footer;

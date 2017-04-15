@@ -4,15 +4,14 @@ import PropTypes from 'prop-types';
 const FooterList = ({ listHeader, listItems }) => {
     const itemList = (
         listItems.map((detail, i) => {
-            if(detail.detailUrl !== undefined) {
-                console.log(detail.detailUrl);
+            if (detail.detailUrl !== undefined) {
                 return (
                     <li><i className={`fa fa-${detail.icon} margin-right-small`} /><a href={detail.detailUrl}>{detail.detailTitle}</a></li>
-                )
+                );
             } else {
                 return (
                     <li><i className={`fa fa-${detail.icon} margin-right-small`} />{detail.detailTitle}</li>
-                )
+                );
             }
         })
     );
@@ -29,7 +28,7 @@ const FooterList = ({ listHeader, listItems }) => {
 
 FooterList.propTypes = {
     listHeader: PropTypes.string.isRequired,
-    listItems: PropTypes.arrayOf(PropTypes.string),
+    listItems: PropTypes.arrayOf(PropTypes.string).isRequired,
 };
 
 export default FooterList;
