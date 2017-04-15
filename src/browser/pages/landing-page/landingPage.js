@@ -26,7 +26,7 @@ const LandingPage = () =>
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
             </p>
         </Panel>
-        <Panel modifier="alternative" advan nceButton>
+        <Panel modifier="alternative" advanceButton>
             <h2 className="panel__heading margin-bottom-large">THINGS I DO</h2>
             <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
         </Panel>

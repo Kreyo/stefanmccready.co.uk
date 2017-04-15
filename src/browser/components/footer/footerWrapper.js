@@ -8,7 +8,7 @@ const Footer = ({ footerData, pageDate }) => {
     const footerSections = (
         footerData.footerSections.map((footerSection, i) =>
             <div className="col span_1_of_2">
-                <FooterList listItems={footerSection.links} listHeader={footerSection.title} />
+                <FooterList listItems={footerSection.details} listHeader={footerSection.title} />
             </div>
         )
     );
