@@ -1,6 +1,15 @@
-$heading-large: 60px;
-$heading-medium: 45px;
-$heading-small: 30px;
-$text-large: 20px;
-$text-medium: 16px;
-$text-small: 14px;
+p {
+    margin-bottom: 1.3em;
+}
+
+h1, h2, h3, h4 {
+  margin: 1.414em 0 0.5em;
+  font-weight: inherit;
+  line-height: 1.2;
+}
+
+$heading-large: 3.998em;
+$heading-medium: 2.827em;
+$heading-small: 1.999em;
+$heading-tiny: 1.414em;
+$text-smallprint: 0.707em;
