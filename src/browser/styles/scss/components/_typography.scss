@@ -15,29 +15,21 @@
 }
 
 .heading-small {
-    font-size: $text-large;
+    font-size: $heading-tiny;
 
     @include mq($from: tablet) {
         font-size: $heading-small;
     }
 }
 
-.text-large {
-    font-size: $text-medium;
+.heading-tiny {
+    font-size: $heading-tiny;
 
     @include mq($from: tablet) {
-        font-size: $text-large;
+        font-size: $heading-tiny;
     }
 }
 
-.text-medium {
-    font-size: $text-small;
-
-    @include mq($from: tablet) {
-        font-size: $text-medium;
-    }
-}
-
-.text-small {
-    font-size: $text-small;
+.text-smallsprint {
+    font-size: $text-smallprint;
 }
