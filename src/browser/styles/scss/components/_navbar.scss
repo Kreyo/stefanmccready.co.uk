@@ -1,0 +1,18 @@
+.nav-bar {
+    height: 75px;
+    line-height: 75px;
+    color: red;
+    width: 100%;
+    padding-bottom: 17px;
+}
+
+.nav-bar__left {
+    float: left;
+    padding-top: 10px;
+}
+
+.nav-bar__right {
+    float: right;
+    text-align: right;
+    padding-top: 10px;
+}
