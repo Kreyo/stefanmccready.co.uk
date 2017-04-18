@@ -1,5 +1,5 @@
 export const linksList = [
-    { route: '/code', title: 'About Me' },
-    { route: '/pencil', title: 'Portfolio' },
-    { route: '/universal-access', title: 'Contact Me' },
+    { route: '/about', title: 'ABOUT ME' },
+    { route: '/portflio', title: 'PORTFOLIO' },
+    { route: '/contact', title: 'CONTACT ME' },
 ];

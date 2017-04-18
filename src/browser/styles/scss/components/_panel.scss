@@ -23,11 +23,11 @@
     font-size: 32px;
 
     @include mq($from: tablet) {
-         font-size: 50px;
+         font-size: 46px;
     }
 
     @include mq($from: 1600px) {
-         font-size: 68px;
+         font-size: 56px;
     }
 }
 
