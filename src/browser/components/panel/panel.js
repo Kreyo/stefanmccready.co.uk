@@ -1,9 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-import IconBar from '../icon-bar/iconBar';
-
-const Panel = ({ children, modifier, advanceButton, iconBar, isNarrow }) => {
+const Panel = ({ children, modifier, advanceButton, isNarrow, customBar }) => {
     let advanceModifier;
     let narrowClassname;
 
@@ -25,9 +23,7 @@ const Panel = ({ children, modifier, advanceButton, iconBar, isNarrow }) => {
 
     return (
         <article className={classNames}>
-            { iconBar ?
-                <IconBar menuText="MENU" socialLink="https://www.linkedin.com/in/stefan-mccready-11507297/" socialLogo="linkedin" /> : null
-            }
+            {customBar}
             <div className="panel__container">
                 <div className="panel__content">
                     {children}
@@ -46,7 +42,7 @@ Panel.defaultProps = {
     children: '',
     modifier: 'standard',
     advanceButton: false,
-    iconBar: false,
+    customBar: '',
     isNarrow: false,
 };
 
@@ -54,7 +50,7 @@ Panel.propTypes = {
     children: PropTypes.children,
     modifier: PropTypes.string,
     advanceButton: PropTypes.bool,
-    iconBar: PropTypes.bool,
+    customBar: PropTypes.validateDOMElem,
     isNarrow: PropTypes.bool,
 };
 

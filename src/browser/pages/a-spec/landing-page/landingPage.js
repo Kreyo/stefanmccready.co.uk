@@ -5,9 +5,13 @@ import Footer from '../../../components/footer/footerWrapper';
 import footerData from '../../../config/footerData.json';
 import { skillsList, breakdownCopy } from './constants';
 
+import IconBar from '../../../components/icon-bar/iconBar';
+
+const iconHeader = (<IconBar menuText="MENU" socialLink="https://www.linkedin.com/in/stefan-mccready-11507297/" socialLogo="linkedin" />);
+
 const LandingPage = () =>
     <div>
-        <Panel modifier="alternative" advanceButton iconBar>
+        <Panel modifier="alternative" advanceButton customBar={iconHeader}>
             <h1 className="panel__heading margin-bottom margin-top-small">STEFAN MCCREADY</h1>
             <div className="panel__heading-set margin-bottom">
                 <p className="panel__subheading">DESIGNER</p>
