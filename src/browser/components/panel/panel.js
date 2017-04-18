@@ -1,7 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Panel = ({ children, modifier, advanceButton, isNarrow, customBar }) => {
+import StandardPanel from './templates/standardPanel';
+import ImageSplitPanel from './templates/imageSplitPanel';
+
+const Panel = ({ children, modifier, advanceButton, isNarrow, customBar, imgPanel, imgSrc, imgAlt }) => {
     let advanceModifier;
     let narrowClassname;
 
@@ -20,15 +23,18 @@ const Panel = ({ children, modifier, advanceButton, isNarrow, customBar }) => {
     }
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
-
+    
     return (
         <article className={classNames}>
             {customBar}
-            <div className="panel__container">
-                <div className="panel__content">
+            { imgPanel ? 
+                <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
                     {children}
-                </div>
-            </div>
+                </ImageSplitPanel> :
+                <StandardPanel>
+                    {children}
+                </StandardPanel>
+            }
             { advanceButton ?
                 <button className={advanceClassNames}>
                     <i className="fa fa-chevron-down" aria-hidden="true" />
@@ -44,6 +50,9 @@ Panel.defaultProps = {
     advanceButton: false,
     customBar: '',
     isNarrow: false,
+    imgPanel: false,
+    imgSrc: '',
+    imgAlt: '',
 };
 
 Panel.propTypes = {
@@ -52,6 +61,9 @@ Panel.propTypes = {
     advanceButton: PropTypes.bool,
     customBar: PropTypes.validateDOMElem,
     isNarrow: PropTypes.bool,
+    imgPanel: PropTypes.bool,
+    imgSrc: PropTypes.string,
+    imgAlt: PropTypes.string,
 };
 
 export default Panel;

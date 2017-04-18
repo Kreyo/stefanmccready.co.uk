@@ -18,6 +18,9 @@ const LandingPage = () =>
                 <button className="btn btn--alternative">CONTACT ME</button>
             </div>
         </Panel>
+        <Panel modifier="standard" imgPanel imgSrc={require('../../../images/me.png')} imgAlt="Me">
+            <p>Hello</p>
+        </Panel>
     </div>;
 
 export default LandingPage;
