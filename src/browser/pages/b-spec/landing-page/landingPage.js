@@ -7,7 +7,7 @@ const customPanelBar = (<NavBar linkArray={linksList} />);
 
 const LandingPage = () =>
     <div>
-        <Panel modifier="alternative" customBar={customPanelBar}>
+        <Panel modifier="alternative" customBar={customPanelBar} advanceButton>
             <div className="panel__heading-set margin-bottom">
                 <p className="panel__heading">DESIGNER</p>
                 <p className="panel__heading">DEVELOPER</p>
