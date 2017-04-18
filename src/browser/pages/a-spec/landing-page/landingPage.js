@@ -1,8 +1,8 @@
 import React from 'react';
-import Panel from '../../components/panel/panel';
-import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
-import Footer from '../../components/footer/footerWrapper';
-import footerData from '../../config/footerData.json';
+import Panel from '../../../components/panel/panel';
+import SkillsBreakdown from '../../../components/skills-breakdown/skillsBreakdown';
+import Footer from '../../../components/footer/footerWrapper';
+import footerData from '../../../config/footerData.json';
 import { skillsList, breakdownCopy } from './constants';
 
 const LandingPage = () =>
@@ -21,7 +21,7 @@ const LandingPage = () =>
         </Panel>
         <Panel modifier="standard" advanceButton>
             <h2 className="panel__heading margin-bottom-large">HELLO | BONJOUR | 你好</h2>
-            <img className="panel__image margin-bottom" src={require('../../images/stefan.png')} alt="Stefan McCready" />
+            <img className="panel__image margin-bottom" src={require('../../../images/stefan.png')} alt="Stefan McCready" />
             <p className="text-large panel__description margin-bottom">
                 My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
             </p>
