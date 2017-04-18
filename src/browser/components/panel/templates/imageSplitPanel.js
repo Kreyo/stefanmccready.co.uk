@@ -5,11 +5,13 @@ const ImageSplitPanel = ({ children, imgSrc, imgAlt }) => {
 
     return (
         <div>
-            <div className="panel__image">
-                <img src={imgSrc} alt={imgAlt} />
+            <div className="panel__split-container">
+                <img className="panel__image" src={imgSrc} alt={imgAlt} />
             </div>
-            <div className="panel__content panel__content--split">
-                {children}
+            <div className="panel__split-container">
+                <div className="panel__content panel__content--v-aligned">
+                    {children}
+                </div>
             </div>
         </div>
     );
