@@ -25,7 +25,7 @@ const NavBar = ({ linkArray }) => {
 };
 
 NavBar.propTypes = {
-    linkArray: PropTypes.arraOf(PropTypes.object).isRequired,
+    linkArray: PropTypes.arrayOf(PropTypes.object).isRequired,
 };
 
 export default NavBar;
