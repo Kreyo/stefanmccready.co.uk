@@ -13,7 +13,7 @@ if (process.env.BROWSER) {
 ReactDOM.render(
     <Router history={browserHistory}>
         <Route path="/" component={LandingPage} />
-        <Route path="/b" component={LandingPageB} />
+        <Route path="/b-spec" component={LandingPageB} />
     </Router>,
     document.getElementById('content')
 );
