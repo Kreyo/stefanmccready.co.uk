@@ -1,9 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const Panel = ({ children, modifier, advanceButton, isNarrow, customBar }) => {
+import StandardPanel from './templates/standardPanel';
+import ImageSplitPanel from './templates/imageSplitPanel';
+
+const Panel = ({ children, modifier, advanceButton, isNarrow, isMedium, customBar, imgPanel, imgSrc, imgAlt }) => {
     let advanceModifier;
     let narrowClassname;
+    let mediumClassname;
 
     if (isNarrow) {
         narrowClassname = 'panel--narrow';
@@ -11,24 +15,33 @@ const Panel = ({ children, modifier, advanceButton, isNarrow, customBar }) => {
         narrowClassname = '';
     }
 
-    const classNames = (`panel panel--${modifier} ${narrowClassname}`);
+    if (isMedium) {
+        mediumClassname = 'panel--medium';
+    } else {
+        mediumClassname = '';
+    }
+
+    const classNames = (`panel panel--${modifier} ${narrowClassname} ${mediumClassname}`);
 
     if (modifier === 'alternative') {
-        advanceModifier = 'standard';
-    } else {
         advanceModifier = 'alternative';
+    } else {
+        advanceModifier = 'standard';
     }
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
-
+    
     return (
         <article className={classNames}>
             {customBar}
-            <div className="panel__container">
-                <div className="panel__content">
+            { imgPanel ? 
+                <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
                     {children}
-                </div>
-            </div>
+                </ImageSplitPanel> :
+                <StandardPanel>
+                    {children}
+                </StandardPanel>
+            }
             { advanceButton ?
                 <button className={advanceClassNames}>
                     <i className="fa fa-chevron-down" aria-hidden="true" />
@@ -44,6 +57,10 @@ Panel.defaultProps = {
     advanceButton: false,
     customBar: '',
     isNarrow: false,
+    isMedium: false,
+    imgPanel: false,
+    imgSrc: '',
+    imgAlt: '',
 };
 
 Panel.propTypes = {
@@ -52,6 +69,10 @@ Panel.propTypes = {
     advanceButton: PropTypes.bool,
     customBar: PropTypes.validateDOMElem,
     isNarrow: PropTypes.bool,
+    isMedium: PropTypes.bool,
+    imgPanel: PropTypes.bool,
+    imgSrc: PropTypes.string,
+    imgAlt: PropTypes.string,
 };
 
 export default Panel;

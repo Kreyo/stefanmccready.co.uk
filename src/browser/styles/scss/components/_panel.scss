@@ -1,22 +1,27 @@
 .panel {
-    padding: 0 25px;
     position: relative;
     background-color: #fff;
     color: #af1e2d;
-    height: 85vh;
-    max-height: 100vh;
     text-align: center;
 
-    &:first-child {
+    @include mq($from: tablet) {
+        height: 90vh;
 
-        .panel__container {
-            top: 35%;
+        &:first-child {
+            
+            .panel__container {
+                top: 35%;
+            }
         }
     }
 }
 
 .panel--narrow {
     height: 60vh;
+}
+
+.panel--medium {
+    height: 65vh;
 }
 
 .panel__heading {
@@ -33,6 +38,7 @@
 
 .panel__subheading {
     font-size: 20px;
+    margin: 0 auto;
 
     @include mq($from: tablet) {
          font-size: 30px;
@@ -67,10 +73,24 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
+    padding: 0 25px;
+}
+
+.panel__split-container {
+    @include mq($from: tablet) {
+        display: inline-block;
+        width: 50%;
+    }
 }
 
 .panel__content {
     line-height: 1.15;
+}
+
+.panel__content--v-aligned {
+    position: relative;
+    top: 50%;
+    transform: translateY(-100%);
 }
 
 .panel__btn-set {
@@ -98,9 +118,14 @@
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    bottom: -25px;
+    bottom: 30px;
     margin-left: -25px;
     z-index: 10;
+
+    i {
+        position: relative;
+        left: -1px;
+    }
 }
 
 .panel-list {
@@ -122,7 +147,7 @@
     margin: 0 auto;
 
     @include mq($from: tablet) {
-        width: 40%;
+        width: 60%;
     }
 
     @include mq($from: 1600) {
@@ -159,12 +184,9 @@
 }
 
 .panel__image {
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-
-    @include mq($from: 1600px) {
-        height: 250px;
-        width: 250px;
+    max-width: 100%;
+    height: auto;
+     @include mq($from: tablet) {
+         height: 60vh;
     }
 }
