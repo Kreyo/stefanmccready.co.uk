@@ -1,38 +1,26 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import classNames from 'classnames';
 
 import StandardPanel from './templates/standardPanel';
 import ImageSplitPanel from './templates/imageSplitPanel';
 
-const Panel = ({ children, modifier, advanceButton, isNarrow, isMedium, customBar, imgPanel, imgSrc, imgAlt }) => {
-    let advanceModifier;
-    let narrowClassname;
-    let mediumClassname;
+const Panel = ({ children, modifier, advanceButton, isNarrow, customBar, imgPanel, imgSrc, imgAlt }) => {
+    const panelClassNames = classNames({
+        panel: true,
+        [`panel--${modifier}`]: true,
+        'panel--narrow': isNarrow,
+    });
 
-    if (isNarrow) {
-        narrowClassname = 'panel--narrow';
-    } else {
-        narrowClassname = '';
-    }
-
-    if (isMedium) {
-        mediumClassname = 'panel--medium';
-    } else {
-        mediumClassname = '';
-    }
-
-    const classNames = (`panel panel--${modifier} ${narrowClassname} ${mediumClassname}`);
-
-    if (modifier === 'alternative') {
-        advanceModifier = 'alternative';
-    } else {
-        advanceModifier = 'standard';
-    }
-
-    const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
+    const advanceClassNames = classNames({
+        btn: true,
+        [`btn--${modifier}`]: true,
+        'btn--circle': true,
+        panel__btn: true,
+    });
 
     return (
-        <article className={classNames}>
+        <article className={panelClassNames}>
             {customBar}
             { imgPanel ?
                 <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
@@ -57,7 +45,6 @@ Panel.defaultProps = {
     advanceButton: false,
     customBar: '',
     isNarrow: false,
-    isMedium: false,
     imgPanel: false,
     imgSrc: '',
     imgAlt: '',
@@ -69,7 +56,6 @@ Panel.propTypes = {
     advanceButton: PropTypes.bool,
     customBar: PropTypes.validateDOMElem,
     isNarrow: PropTypes.bool,
-    isMedium: PropTypes.bool,
     imgPanel: PropTypes.bool,
     imgSrc: PropTypes.string,
     imgAlt: PropTypes.string,
