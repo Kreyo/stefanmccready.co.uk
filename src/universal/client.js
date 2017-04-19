@@ -4,7 +4,6 @@ import React from 'react';
 import { Router, Route, browserHistory } from 'react-router';
 
 import LandingPage from './../browser/pages/a-spec/landing-page/landingPage';
-import LandingPageB from './../browser/pages/b-spec/landing-page/landingPage';
 
 if (process.env.BROWSER) {
     require('../browser/styles/scss/all.scss');
@@ -13,7 +12,6 @@ if (process.env.BROWSER) {
 ReactDOM.render(
     <Router history={browserHistory}>
         <Route path="/" component={LandingPage} />
-        <Route path="/b-spec" component={LandingPageB} />
     </Router>,
     document.getElementById('content')
 );
