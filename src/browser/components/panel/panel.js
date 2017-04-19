@@ -17,9 +17,9 @@ const Panel = ({ children, modifier, advanceButton, isNarrow, customBar, imgPane
     const classNames = (`panel panel--${modifier} ${narrowClassname}`);
 
     if (modifier === 'alternative') {
-        advanceModifier = 'standard';
-    } else {
         advanceModifier = 'alternative';
+    } else {
+        advanceModifier = 'standard';
     }
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
