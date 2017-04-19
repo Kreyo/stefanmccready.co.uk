@@ -3,20 +3,25 @@
     background-color: #fff;
     color: #af1e2d;
     text-align: center;
-    height: auto;
 
-    &:first-child {
+    @include mq($from: tablet) {
         height: 90vh;
-        max-height: 100vh;
 
-        .panel__container {
-            top: 35%;
+        &:first-child {
+            
+            .panel__container {
+                top: 35%;
+            }
         }
     }
 }
 
 .panel--narrow {
-    height: 70vh;
+    height: 60vh;
+}
+
+.panel--medium {
+    height: 65vh;
 }
 
 .panel__heading {
@@ -33,6 +38,7 @@
 
 .panel__subheading {
     font-size: 20px;
+    margin: 0 auto;
 
     @include mq($from: tablet) {
          font-size: 30px;
@@ -72,7 +78,7 @@
 
 .panel__split-container {
     @include mq($from: tablet) {
-        float:left;
+        display: inline-block;
         width: 50%;
     }
 }
@@ -84,7 +90,7 @@
 .panel__content--v-aligned {
     position: relative;
     top: 50%;
-    transform: translateY(90%);
+    transform: translateY(-100%);
 }
 
 .panel__btn-set {
@@ -112,9 +118,14 @@
     width: 50px;
     border-radius: 50%;
     position: absolute;
-    bottom: 25px;
+    bottom: 30px;
     margin-left: -25px;
     z-index: 10;
+
+    i {
+        position: relative;
+        left: -1px;
+    }
 }
 
 .panel-list {
@@ -176,6 +187,6 @@
     max-width: 100%;
     height: auto;
      @include mq($from: tablet) {
-         height: 70vh;
+         height: 60vh;
     }
 }
