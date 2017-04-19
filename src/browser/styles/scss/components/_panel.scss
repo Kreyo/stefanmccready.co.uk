@@ -8,7 +8,7 @@
         height: 90vh;
 
         &:first-child {
-            
+
             .panel__container {
                 top: 35%;
             }
@@ -150,7 +150,7 @@
         width: 60%;
     }
 
-    @include mq($from: 1600) {
+    @include mq($from: 1600px) {
         font-size: 22px;
     }
 }
@@ -186,6 +186,7 @@
 .panel__image {
     max-width: 100%;
     height: auto;
+
      @include mq($from: tablet) {
          height: 60vh;
     }

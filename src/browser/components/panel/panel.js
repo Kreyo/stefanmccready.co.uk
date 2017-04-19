@@ -30,11 +30,11 @@ const Panel = ({ children, modifier, advanceButton, isNarrow, isMedium, customBa
     }
 
     const advanceClassNames = (`btn btn--${advanceModifier} btn--circle panel__btn`);
-    
+
     return (
         <article className={classNames}>
             {customBar}
-            { imgPanel ? 
+            { imgPanel ?
                 <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
                     {children}
                 </ImageSplitPanel> :

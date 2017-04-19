@@ -1,16 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const StandardPanel = ({ children }) => {
-
-    return (
-        <div className="panel__container">
-            <div className="panel__content text-center">
-                {children}
-            </div>
+const StandardPanel = ({ children }) =>
+    <div className="panel__container">
+        <div className="panel__content text-center">
+            {children}
         </div>
-    );
-};
+    </div>;
 
 StandardPanel.defaultProps = {
     children: '',
