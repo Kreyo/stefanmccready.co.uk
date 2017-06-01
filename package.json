@@ -70,7 +70,7 @@
     "postcss-loader": "^0.13.0",
     "pre-commit": "^1.2.2",
     "prop-types": "^15.5.4",
-    "react": "^15.5.3",
+    "react": "^15.5.4",
     "react-addons-test-utils": "^15.5.1",
     "react-router": "^2.8.1",
     "remarkable": "^1.7.1",
