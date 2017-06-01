@@ -5,8 +5,10 @@ import Description from '../../components/description/description';
 
 const LandingPage = () =>
     <div>
-        <span className="menu__trigger">Menu</span>
-        <span className="resume__trigger">My Resume</span>
+        <div className="bar">
+            <span className="menu__trigger">Menu</span>
+            <span className="resume__trigger">My Resume</span>
+        </div>
         <Panel modifier="alternative" isHalf>
             <div className="text-center">
                 <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
