@@ -30,9 +30,15 @@ const LandingPage = () =>
                     <div className="col span_1_of_2">
                         <Description
                             header="My Belief" 
-                            text="Simplicity is bliss. I belive that we should strive to make things as simple as possible for both compony and customer." />
+                            text="Simplicity is bliss. I believe that we should strive to make things as simple as possible for both compony and customer." />
                     </div>
                 </div>
+            </div>
+        </Panel>
+        <Panel modifier="alternative" isHalf>
+            <div className="text-center">
+                <h1 className="heading-medium margin-bottom-small">Want to get in touch?</h1>
+                <h2 className="heading-small">stefanmccready@oulook.com</h2>
             </div>
         </Panel>
     </div>;
