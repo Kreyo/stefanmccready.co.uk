@@ -1,47 +1,48 @@
 import React from 'react';
 import Panel from '../../components/panel/panel';
-import NavBar from '../../components/navbar/navbar';
-import SkillsBreakdown from '../../components/skills-breakdown/skillsBreakdown';
-import { skillsList, breakdownCopy, linksList } from './constants';
-import Footer from '../../components/footer/footerWrapper';
-import footerData from '../../config/footerData.json';
-
-const customPanelBar = (<NavBar linkArray={linksList} />);
+import Icon from '../../components/icon/icon';
+import Description from '../../components/description/description';
 
 const LandingPage = () =>
     <div>
-        <Panel modifier="alternative" customBar={customPanelBar}>
-            <div className="panel__heading-set margin-bottom">
-                <p className="panel__heading">DESIGNER</p>
-                <p className="panel__heading">DEVELOPER</p>
-                <p className="panel__heading">MENTOR</p>
+        <div className="bar">
+            <span className="menu__trigger">Menu</span>
+            <span className="resume__trigger">My Resume</span>
+        </div>
+        <Panel modifier="alternative" isHalf>
+            <div className="text-center">
+                <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
+                <h2 className="heading-small">Designer - Developer</h2>
+                <div className="icon-set">
+                    <Icon iconName="facebook" setItem />
+                    <Icon iconName="instagram" setItem />
+                    <Icon iconName="github" setItem />
+                    <Icon iconName="twitter" setItem />
+                </div>
             </div>
-            <p className="panel__description">
-                A lot of these website seem to have some text written around this area giving a brief summary about who they are etc.
-                Not me, I just wanted to say that you shouldnt put Pineapple on a Pizza.
-            </p>
-            <div className="panel__btn-set margin-top-large">
-                <button className="btn btn--alternative">DOWNLOAD MY RÈSUMÈ</button>
-                <button className="btn btn--alternative">CONTACT ME</button>
+        </Panel>
+        <Panel isHalf>
+            <div className="container">
+                <div className="section group">
+                    <div className="col span_1_of_2">
+                        <Description 
+                            header="Who am I?"
+                            text="Im a Front End developer in Leeds, currently having fun helping Sky sell some Mobile phones and build up reusuable frameworks." />
+                    </div>
+                    <div className="col span_1_of_2">
+                        <Description
+                            header="My Belief" 
+                            text="Simplicity is bliss. I believe that we should strive to make things as simple as possible for both compony and customer." />
+                    </div>
+                </div>
             </div>
         </Panel>
-        <Panel modifier="standard" isNarrow imgPanel imgSrc={require('../../images/me.png')} imgAlt="Me">
-            <h2 className="panel__heading margin-bottom-large margin-top-large">HELLO | BONJOUR | 你好</h2>
-            <p className="text-large panel__description margin-bottom">
-                My name is Stefan and I currently work as a front-end developer at <strong>Sky in Leeds, UK</strong> and will code at every possible oppurtunity. Some say I have an addiction to it.
-            </p>
+        <Panel modifier="alternative" isHalf>
+            <div className="text-center">
+                <h1 className="heading-medium margin-bottom-small">Want to get in touch?</h1>
+                <h2 className="heading-small">stefanmccready@oulook.com</h2>
+            </div>
         </Panel>
-        <Panel modifier="alternative" isNarrow>
-            <h2 className="panel__heading margin-bottom-large">MY AREAS OF EXPERTISE:</h2>
-            <SkillsBreakdown skillsArray={skillsList} breakdownText={breakdownCopy} />
-        </Panel>
-        <Panel modifier="standard" isNarrow>
-            <h2 className="panel__heading margin-bottom-large">INTERESTED?</h2>
-            <p className="panel__subheading panel__subheading--link margin-bottom">
-                hello@stefanmccready.co.uk
-            </p>
-        </Panel>
-        <Footer footerData={footerData.footer} />
     </div>;
 
 export default LandingPage;
