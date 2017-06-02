@@ -9,7 +9,7 @@ const LandingPage = () =>
             <span className="menu__trigger">Menu</span>
             <span className="resume__trigger">My Resume</span>
         </div>
-        <Panel modifier="alternative" isHalf>
+        <Panel modifier="image" isHalf backgroundUrl={require('../../images/face-wide.png')}>
             <div className="text-center">
                 <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
                 <h2 className="heading-small">Designer - Developer</h2>
