@@ -5,11 +5,11 @@ import classNames from 'classnames';
 import StandardPanel from './templates/standardPanel';
 import ImageSplitPanel from './templates/imageSplitPanel';
 
-const Panel = ({ children, modifier, advanceButton, isHalf, customBar, imgPanel, imgSrc, imgAlt }) => {
+const Panel = ({ children, modifier, advanceButton, backgroundUrl, isHalf, customBar, imgPanel, imgSrc, imgAlt }) => {
     const panelClassNames = classNames({
         panel: true,
         [`panel--${modifier}`]: true,
-        'panel--half': isHalf,
+        'panel--narrow': isHalf,
     });
 
     const advanceClassNames = classNames({
@@ -19,8 +19,16 @@ const Panel = ({ children, modifier, advanceButton, isHalf, customBar, imgPanel,
         panel__btn: true,
     });
 
+    let background;
+
+    if (backgroundUrl) {
+        background = {
+            backgroundImage: `url(${backgroundUrl})`,
+        }
+    }
+
     return (
-        <article className={panelClassNames}>
+        <article className={panelClassNames} style={background}>
             {customBar}
             { imgPanel ?
                 <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
@@ -48,6 +56,7 @@ Panel.defaultProps = {
     imgPanel: false,
     imgSrc: '',
     imgAlt: '',
+    backgroundUrl: '',
 };
 
 Panel.propTypes = {
@@ -59,6 +68,7 @@ Panel.propTypes = {
     imgPanel: PropTypes.bool,
     imgSrc: PropTypes.string,
     imgAlt: PropTypes.string,
+    backgroundUrl: PropTypes.string,
 };
 
 export default Panel;

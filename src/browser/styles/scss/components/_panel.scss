@@ -3,6 +3,9 @@
     background-color: #af1e2d;
     color: #fff;
     height: 100vh;
+    background-size: cover;
+    background-position-x: 300px;
+    background-repeat: no-repeat;
 }
 
 .panel--alternative {
@@ -17,8 +20,12 @@
     padding: 0 25px;
 }
 
-.panel--half {
+.panel--narrow {
     @include mq($from: tablet) {
-        height: 50vh;
+        height: 60vh;
     }
+}
+
+.panel--image {
+    background-color: #000;
 }

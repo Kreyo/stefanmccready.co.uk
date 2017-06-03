@@ -9,7 +9,7 @@ const LandingPage = () =>
             <span className="menu__trigger">Menu</span>
             <span className="resume__trigger">My Resume</span>
         </div>
-        <Panel modifier="alternative" isHalf>
+        <Panel modifier="image" isHalf backgroundUrl={require('../../images/face-wide.png')}>
             <div className="text-center">
                 <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
                 <h2 className="heading-small">Designer - Developer</h2>
@@ -21,7 +21,7 @@ const LandingPage = () =>
                 </div>
             </div>
         </Panel>
-        <Panel isHalf>
+        <Panel modifier="alternative" isHalf>
             <div className="container">
                 <div className="section group">
                     <div className="col span_1_of_2">
@@ -37,7 +37,7 @@ const LandingPage = () =>
                 </div>
             </div>
         </Panel>
-        <Panel modifier="alternative" isHalf>
+        <Panel isHalf>
             <div className="text-center">
                 <h1 className="heading-medium margin-bottom-small">Want to get in touch?</h1>
                 <h2 className="heading-small">stefanmccready@oulook.com</h2>
