@@ -1,0 +1,45 @@
+$heroContentHeight: 500px;
+
+.imagespace-wrapper {
+  position: relative; /* [1] */
+  height: 600px; /* [2] */
+  min-height: 20em; /* [2] */
+  color: color(white); /* [3] */
+  background-position: center; /* [4] */
+  background-size: cover; /* [4] */
+}
+
+.imagespace {
+    overflow: hidden;
+    @include mq($from: tablet) {
+        height: $heroContentHeight;
+    }
+}
+
+.imagespace__background {
+    background-size: 100%;
+    background-repeat: no-repeat;
+
+    @include mq($from: tablet) {
+        height: $heroContentHeight;
+    }
+
+    @include mq($from: 1024px) {
+        background-position: center;
+        background-size: 1940px;
+    }
+}
+
+.imagespace__content {
+    position: relative;
+    padding-top: 55%;
+    padding-bottom: 30px;
+    color: #fff;
+
+    @include mq($from: tablet) {
+        padding-top: 0;
+        padding-bottom: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
