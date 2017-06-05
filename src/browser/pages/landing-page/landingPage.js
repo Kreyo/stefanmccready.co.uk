@@ -3,13 +3,11 @@ import Panel from '../../components/panel/panel';
 import Icon from '../../components/icon/icon';
 import Description from '../../components/description/description';
 import Imagespace from '../../components/imagespace/imagespace';
+import MenuBar from '../../components/menu-bar/MenuBar';
 
 const LandingPage = () =>
     <div>
-        <div className="bar">
-            <span className="menu__trigger">Menu</span>
-            <span className="resume__trigger">My Resume</span>
-        </div>
+        <MenuBar />
         <Imagespace background={require('../../images/face-wide-v3.png')}>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
             <h2 className="heading-small">Designer - Developer</h2>

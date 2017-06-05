@@ -4,4 +4,28 @@
     line-height: 75px;
     position: fixed;
     z-index: 2;
+
+    &.is-anchored {
+        background-color: #fff;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+        
+        * {
+            color: #000;
+        }
+
+        .bar__title {
+            display: inline;
+        }
+    }
+}
+
+.bar__title {
+    width: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -25px;
+    color: #000;
+    display: none;
+    font-size: 28px;
+    font-weight: 900;
 }
