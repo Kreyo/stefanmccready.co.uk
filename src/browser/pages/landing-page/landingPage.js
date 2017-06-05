@@ -2,25 +2,22 @@ import React from 'react';
 import Panel from '../../components/panel/panel';
 import Icon from '../../components/icon/icon';
 import Description from '../../components/description/description';
+import Imagespace from '../../components/imagespace/imagespace';
+import MenuBar from '../../components/menu-bar/MenuBar';
 
 const LandingPage = () =>
     <div>
-        <div className="bar">
-            <span className="menu__trigger">Menu</span>
-            <span className="resume__trigger">My Resume</span>
-        </div>
-        <Panel modifier="image" isHalf backgroundUrl={require('../../images/face-wide.png')}>
-            <div className="text-center">
-                <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
-                <h2 className="heading-small">Designer - Developer</h2>
-                <div className="icon-set">
-                    <Icon iconName="facebook" setItem />
-                    <Icon iconName="instagram" setItem />
-                    <Icon iconName="github" setItem />
-                    <Icon iconName="twitter" setItem />
-                </div>
-            </div>
-        </Panel>
+        <MenuBar />
+        <Imagespace background={require('../../images/face-wide-v3.png')}>
+            <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
+            <h2 className="heading-small">Designer - Developer</h2>
+            <div className="icon-set">
+                <Icon iconName="facebook" setItem />
+                <Icon iconName="instagram" setItem />
+                <Icon iconName="github" setItem />
+                <Icon iconName="twitter" setItem />
+             </div>
+        </Imagespace>
         <Panel modifier="alternative" isHalf>
             <div className="container">
                 <div className="section group">
