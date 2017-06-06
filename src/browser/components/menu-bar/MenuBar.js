@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
+import { Motion, spring } from 'react-motion';
 
 class MenuBar extends Component {
     constructor(props) {
@@ -26,30 +27,30 @@ class MenuBar extends Component {
 
         if (isAnchored && scrollPosition < headerPoint) {
             this.setState({ isAnchored: false });
+
         }
         if (!isAnchored && scrollPosition > headerPoint) {
             this.setState({ isAnchored: true });
-        }
-        if (isAnchored && scrollPosition < headerPoint) {
-            this.setState({ isAnchored: false });
         }
     }
 
     render() {
         const { isAnchored } = this.state;
-        const barClassNames = classNames({
-            bar: true,
-            'is-anchored': isAnchored,
-        })
 
         return (
-            <div className={barClassNames}>
-                <span className="menu__trigger">Menu</span>
-                <span className="bar__title">SM</span>
-                <span className="resume__trigger">My Resume</span>
-            </div>
+            <Motion style={{ y: spring(isAnchored ? 0 : 75) }}>
+                {({ y }) => (
+                    <div 
+                        className="bar"
+                        style={y !== 0 ? { transform: `translateY(-${y}px)` } : { transform: 'translateY(0)' }}>
+                            <span className="menu__trigger">Menu</span>
+                            <span className="bar__title">SM</span>
+                            <span className="resume__trigger">My Resume</span>
+                    </div>
+                )}
+            </Motion>
         );
     }    
 };
 
-export default MenuBar; 
+export default MenuBar;
