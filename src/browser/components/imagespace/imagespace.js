@@ -13,6 +13,29 @@ class Imagespace extends Component {
         };
     }
 
+    componentWillMount() {
+        const { isMobile, isTablet, isDesktop } = this.state;
+        const browserWidth = window.innerWidth;
+
+        if (browserWidth < 739) {
+            this.setState({ isMobile: true });
+            this.setState({ isTablet: false });
+            this.setState({ isDesktop: false });
+        };
+
+        if ((browserWidth > 739) && (browserWidth < 1024)) {
+            this.setState({ isMobile: false });
+            this.setState({ isTablet: true });
+            this.setState({ isDesktop: false });
+        };
+
+        if (browserWidth >= 1024) {
+            this.setState({ isMobile: false });
+            this.setState({ isTablet: false });
+            this.setState({ isDesktop: true });
+        };
+    }
+
     componentDidMount() {
         window.addEventListener('resize', this.handleResize);
     }
