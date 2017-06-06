@@ -43,9 +43,8 @@ class MenuBar extends Component {
                     <div 
                         className="bar"
                         style={y !== 0 ? { transform: `translateY(-${y}px)` } : { transform: 'translateY(0)' }}>
-                            <span className="menu__trigger">Menu</span>
-                            <span className="bar__title">SM</span>
-                            <span className="resume__trigger">My Resume</span>
+                            <span className="menu__trigger"></span>
+                            <span className="resume__trigger">My Résumé</span>
                     </div>
                 )}
             </Motion>
