@@ -11,7 +11,8 @@
     "start": "node ./src/universal/index.js",
     "heroku-postbuild": "webpack -p --config ./webpack.prod.config.js --progress",
     "lint": "eslint ./src",
-    "stylelint": "stylelint ./src/browser/styles/scss/**/*.scss --syntax scss"
+    "stylelint": "stylelint ./src/browser/styles/scss/**/*.scss --syntax scss",
+    "validate": "npm ls"
   },
   "pre-commit": [
     "lint",
