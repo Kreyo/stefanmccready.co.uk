@@ -1,18 +1,20 @@
-$heroContentHeight: 500px;
-
 .imagespace-wrapper {
-  position: relative; /* [1] */
-  height: 600px; /* [2] */
-  min-height: 20em; /* [2] */
-  color: color(white); /* [3] */
-  background-position: center; /* [4] */
+  position: relative;
+  height: 60vh;
+  min-height: 20em;
+  color: color(white);
+  background-position: center;
   background-size: cover; /* [4] */
 }
 
+$imagespaceHeightDesktop: 500px;
+
 .imagespace {
     overflow: hidden;
+    height: auto;
+
     @include mq($from: tablet) {
-        height: $heroContentHeight;
+        height: $imagespaceHeightDesktop;
     }
 }
 
@@ -21,7 +23,9 @@ $heroContentHeight: 500px;
     background-repeat: no-repeat;
 
     @include mq($from: tablet) {
-        height: $heroContentHeight;
+        background-position: top center;
+        height: $imagespaceHeightDesktop;
+        background-size: 1024px;
     }
 
     @include mq($from: 1024px) {
@@ -32,7 +36,7 @@ $heroContentHeight: 500px;
 
 .imagespace__content {
     position: relative;
-    padding-top: 55%;
+    padding-top: 75%;
     padding-bottom: 30px;
     color: #fff;
 
