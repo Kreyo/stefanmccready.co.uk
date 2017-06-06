@@ -16,7 +16,7 @@ const LandingPage = () =>
         <MenuBar />
         <div className="bar bar--float">
             <span className="menu__trigger"></span>
-            <span className="resume__trigger">My Resume</span>
+            <span className="resume__trigger">My Résumé</span>
         </div>
         <Imagespace imageSet={imageSet}>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
