@@ -1,9 +1,10 @@
 .resume__trigger {
-    position: fixed;
     right: 30px;
     z-index: 2;
     font-size: 20px;
     color: #fff;
+    float:right;
+    margin-right: 30px;
     
     &:before {
         content: "\f0c6";

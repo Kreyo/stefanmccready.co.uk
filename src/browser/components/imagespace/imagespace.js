@@ -35,4 +35,4 @@ Imagespace.propTypes = {
     children: PropTypes.any,
 };
 
-export default Imagespace; 
+export default Imagespace;

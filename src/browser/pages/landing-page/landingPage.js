@@ -8,6 +8,10 @@ import MenuBar from '../../components/menu-bar/MenuBar';
 const LandingPage = () =>
     <div>
         <MenuBar />
+        <div className="bar bar--float">
+            <span className="menu__trigger">Menu</span>
+            <span className="resume__trigger">My Resume</span>
+        </div>
         <Imagespace background={require('../../images/face-wide-v3.png')}>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
             <h2 className="heading-small">Designer - Developer</h2>
