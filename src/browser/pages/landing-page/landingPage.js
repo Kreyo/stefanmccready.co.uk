@@ -4,6 +4,7 @@ import Icon from '../../components/icon/icon';
 import Description from '../../components/description/description';
 import Imagespace from '../../components/imagespace/imagespace';
 import MenuBar from '../../components/menu-bar/MenuBar';
+import Menu from '../../components/menu/menu';
 
 const imageSet = {
     mobileImage: require('../../images/face-mobile.png'),
@@ -14,10 +15,6 @@ const imageSet = {
 const LandingPage = () =>
     <div>
         <MenuBar />
-        <div className="bar bar--float">
-            <span className="menu__trigger"></span>
-            <span className="resume__trigger">My Résumé</span>
-        </div>
         <Imagespace imageSet={imageSet}>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
             <h2 className="heading-small">Designer - Developer</h2>
