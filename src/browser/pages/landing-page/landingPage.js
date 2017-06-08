@@ -15,10 +15,6 @@ const imageSet = {
 const LandingPage = () =>
     <div>
         <MenuBar />
-        <div className="bar bar--float">
-            <Menu />
-            <span className="resume__trigger">My Résumé</span>
-        </div>
         <Imagespace imageSet={imageSet}>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
             <h2 className="heading-small">Designer - Developer</h2>

@@ -41,8 +41,7 @@ class Menu extends Component {
             <div>
                 <button className="menu__trigger" onClick={() => this.handleClick()}></button>
                 <div className={menuClassNames}>
-                    hello
-                    <button onClick={() => this.handleClick()}></button>
+                    <button className="menu__close" onClick={() => this.handleClick()}>Close Menu</button>
                 </div>
             </div>
         );

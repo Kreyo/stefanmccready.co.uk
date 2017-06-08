@@ -1,9 +1,12 @@
 .menu__trigger {
-    left: 30px;
+    left: 20px;
+    top: 20px;
     z-index: 3;
     font-size: 24px;
     color: #fff;
-    margin-left: 30px;
+    background: none;
+    border: none;
+    position: absolute;
     
     &:before {
         content: "\f0c9";
@@ -16,16 +19,31 @@
     }
 }
 
-.menu {
+.menu.menu {
     height: 100vh;
-    width: 200px;
-    position: absolute;
+    width: 300px;
+    position: relative;
     top: 0;
-    left: -200px;
-    background-color: red;
+    left: -300px;
+    background-color: #af1e2d;
     color: white;
+    z-index: 10;
 
     &.is-open {
         left: 0px;
     }
+}
+
+.menu__close {
+    position: absolute;
+    width: 90%;
+    left: 50%;
+    margin-left: -45%;
+    padding: 10px 0;
+    bottom: 0px;
+    border: none;
+    border-top: 1px solid #fff;
+    background: none;
+    font-size: 22px;
+    color: #fff;
 }
