@@ -28,6 +28,7 @@
     background-color: #af1e2d;
     color: white;
     z-index: 10;
+    transition: all 0.25s;
 
     &.is-open {
         left: 0px;
@@ -41,14 +42,34 @@
 
 .menu__close {
     position: absolute;
-    width: 90%;
-    left: 50%;
-    margin-left: -45%;
-    padding: 10px 0;
+    right: 15px;
+    top: 15px;
+    height: 20px;
     bottom: 0px;
     border: none;
-    border-top: 1px solid #fff;
     background: none;
     font-size: 22px;
     color: #fff;
+
+    &:before {
+        content: "\f00d";
+        font-family: FontAwesome;
+    }
+}
+
+.menu-list {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.menu-list__item {
+    border-bottom: 1px solid #fff;
+    
+    &:last-child {
+        border: none;
+    }
 }
