@@ -47,7 +47,6 @@ class MenuBar extends Component {
         return (
             <div className={barClassNames}>
                 <Menu />
-                <button className="resume__trigger">My Résumé</button>
             </div>
         );
     }    
