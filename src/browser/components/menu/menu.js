@@ -42,10 +42,13 @@ class Menu extends Component {
                 <button className="menu__trigger" onClick={() => this.handleClick()}></button>
                 <div className={menuClassNames}>
                     <button className="menu__close" onClick={() => this.handleClick()} />
+                    <div className="menu-initials">
+                        <p className="menu-initials__text">SM</p>
+                    </div>
                     <ul className="menu-list">
-                        <li className="menu-list__item">About Me</li>
-                        <li className="menu-list__item">Portfolio</li>
-                        <li className="menu-list__item">Contact Me</li>
+                        <li className="menu-list__item"><a href="/about">About Me</a></li>
+                        <li className="menu-list__item"><a href="/portfolio">Portfolio</a></li>
+                        <li className="menu-list__item"><a href="/contact">Contact Me</a></li>
                     </ul>
                 </div>
             </div>

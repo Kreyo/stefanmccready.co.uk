@@ -36,8 +36,8 @@ $imagespaceHeightDesktop: 500px;
 
 .imagespace__content {
     position: relative;
-    padding-top: 75%;
-    padding-bottom: 30px;
+    padding-top: 65%;
+    padding-bottom: 15%;
     color: #fff;
 
     @include mq($from: tablet) {
