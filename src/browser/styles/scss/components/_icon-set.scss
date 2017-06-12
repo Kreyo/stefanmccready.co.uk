@@ -1,5 +1,6 @@
 .icon-set {
     margin: 20px 0;
+    position: relative;
 }
 
 .icon-set__item-container {
@@ -16,4 +17,9 @@
 
 .icon-set__item.icon-set__item {
     font-size: 30px;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+    }
 }

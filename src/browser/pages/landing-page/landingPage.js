@@ -19,10 +19,10 @@ const LandingPage = () =>
             <h1 className="heading-medium margin-bottom-small">Stefan McCready</h1>
             <h2 className="heading-small">Designer - Developer</h2>
             <div className="icon-set">
-                <Icon iconName="linkedin" setItem />
-                <Icon iconName="instagram" setItem />
-                <Icon iconName="github" setItem />
-                <Icon iconName="twitter" setItem />
+                <Icon iconName="linkedin" link="https://www.linkedin.com/in/stefan-mccready-11507297/" setItem />
+                <Icon iconName="instagram" setItem link="https://www.instagram.com/stefanmccready/?hl=en" />
+                <Icon iconName="github" setItem link="https://github.com/StefanMcCready"/>
+                <Icon iconName="twitter" setItem link="https://twitter.com/Stefan_McC_123"/>
              </div>
         </Imagespace>
         <Panel modifier="alternative" isHalf>
