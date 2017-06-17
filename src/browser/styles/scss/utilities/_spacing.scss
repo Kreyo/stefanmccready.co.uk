@@ -15,6 +15,7 @@ $global-spacing-sizes: (
   null: 25px,
   -small: 15px,
   -large: 35px,
+  -x-large: 50px,
 ) !default;
 
 @each $property in $global-spacing-properties {

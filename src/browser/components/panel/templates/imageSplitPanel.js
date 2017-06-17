@@ -2,13 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 const ImageSplitPanel = ({ children, imgSrc, imgAlt }) =>
-    <div>
-        <div className="panel__split-container">
-            <img className="panel__image" src={imgSrc} alt={imgAlt} />
-        </div>
-        <div className="panel__split-container">
-            <div className="panel__content panel__content--v-aligned">
-                {children}
+    <div className="container">
+        <div className="section group">
+            <div className="col span_1_of_2">
+                <div className="verticaly-center">
+                    {children}
+                </div>
+            </div>
+            <div className="col span_1_of_2">
+                <img className="margin-left-large panel__image" src={imgSrc} alt={imgAlt} />
             </div>
         </div>
     </div>;

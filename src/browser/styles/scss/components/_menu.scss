@@ -24,8 +24,8 @@
     position: fixed;
     top: 0;
     left: -100%;
-    background-color: #af1e2d;
-    color: white;
+    color: #af1e2d;
+    background-color: white;
     z-index: 10;
     transition: all 0.25s;
     display: block;
@@ -36,7 +36,8 @@
 
     @include mq($from: tablet) {
         width: 300px;
-        left: -300px;
+        left: -305px;
+        box-shadow: 0 8px 10px #333;
     }
 }
 
@@ -49,7 +50,7 @@
     border: none;
     background: none;
     font-size: 22px;
-    color: #fff;
+    color: #af1e2d;
 
     &:before {
         content: "\f00d";
@@ -70,7 +71,7 @@
     font-size: 22px;
 
     a {
-        color: #fff;
+        color: #af1e2d;
         text-decoration: none;
     }
 }
@@ -82,7 +83,7 @@
     font-size: 22px;
     font-weight: bold;
     border-radius: 50%;
-    border: 2px solid #fff;
+    border: 2px solid #af1e2d;
     width: 50px;
     height: 50px;
 

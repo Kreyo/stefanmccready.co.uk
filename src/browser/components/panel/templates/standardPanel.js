@@ -3,8 +3,10 @@ import PropTypes from 'prop-types';
 
 const StandardPanel = ({ children }) =>
     <div className="panel__container">
-        <div className="panel__content text-center">
-            {children}
+        <div className="panel__content">
+            <div className="container">
+                {children}
+            </div>
         </div>
     </div>;
 

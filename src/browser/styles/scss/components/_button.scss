@@ -1,0 +1,25 @@
+.btn {
+    padding: 20px;
+    border:  2px solid #af1e2d;
+    color: #af1e2d;
+    background-color: transparent;
+    font-weight: bolder;
+    font-size: 18px;
+    transition: all 0.25s;
+
+    &:hover {
+        color: #fff;
+        background-color: #af1e2d;
+        cursor: pointer;
+    }
+}
+
+.btn--alternative {
+    border:  2px solid #fff;
+    color: #fff;
+
+    &:hover {
+        color: #af1e2d;
+        background-color: #fff;
+    }
+}

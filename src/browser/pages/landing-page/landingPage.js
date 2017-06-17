@@ -25,21 +25,15 @@ const LandingPage = () =>
                 <Icon iconName="twitter" setItem link="https://twitter.com/Stefan_McC_123"/>
              </div>
         </Imagespace>
-        <Panel modifier="alternative" isHalf>
-            <div className="container">
-                <div className="section group">
-                    <div className="col span_1_of_2">
-                        <Description 
-                            header="Who am I?"
-                            text="Im a Front End developer in Leeds, currently having fun helping Sky sell some Mobile phones and build up reusuable frameworks." />
-                    </div>
-                    <div className="col span_1_of_2">
-                        <Description
-                            header="My Belief" 
-                            text="Simplicity is bliss. I believe that we should strive to make things as simple as possible for both compony and customer." />
-                    </div>
-                </div>
-            </div>
+        <Panel imgSrc={require("../../images/responsivedesign.jpg")} imgPanel>
+            <h2 className="heading-small">Simply put, I make pixels do things.</h2>
+            <p className="margin-top-small u-width-medium">For 6 years now I have been building user interfaces learning new things as I go along</p>
+            <button className="btn btn--alternative margin-top">Download my Resume<Icon iconName="download"/></button>
+        </Panel>
+        <Panel modifier="alternative">
+                <h2 className="heading-small">Simply put, I make pixels do things.</h2>
+                <p className="margin-top-small u-width-small">For 6 years now I have been building user interfaces learning new things as I go along</p>
+                <button className="btn btn--alternative margin-top-large">Download my Resume<Icon iconName="download"/></button>
         </Panel>
     </div>;
 
