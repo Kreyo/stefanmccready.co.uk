@@ -5,7 +5,7 @@ import classNames from 'classnames';
 import StandardPanel from './templates/standardPanel';
 import ImageSplitPanel from './templates/imageSplitPanel';
 
-const Panel = ({ children, modifier, advanceButton, backgroundUrl, isHalf, customBar, imgPanel, imgSrc, imgAlt }) => {
+const Panel = ({ children, modifier, advanceButton, backgroundUrl, isHalf, customBar, imgPanel, imgSrc, imgAlt, imgAlignment }) => {
     const panelClassNames = classNames({
         panel: true,
         [`panel--${modifier}`]: true,
@@ -31,7 +31,7 @@ const Panel = ({ children, modifier, advanceButton, backgroundUrl, isHalf, custo
         <article className={panelClassNames} style={background}>
             {customBar}
             { imgPanel ?
-                <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt}>
+                <ImageSplitPanel imgSrc={imgSrc} imgAlt={imgAlt} imgAlignment={imgAlignment}>
                     {children}
                 </ImageSplitPanel> :
                 <StandardPanel>
