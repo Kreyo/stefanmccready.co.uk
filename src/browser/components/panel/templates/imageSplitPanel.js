@@ -7,7 +7,7 @@ const ImageSplitPanel = ({ children, imgSrc, imgAlt, imgAlignment }) =>
             { imgAlignment === 'left' ?
                 <div>
                     <div className="col span_1_of_2">
-                        <img className="margin-left-large panel__image" src={imgSrc} alt={imgAlt} />
+                        <img className="margin-right-large panel__image" src={imgSrc} alt={imgAlt} />
                     </div>
                     <div className="col span_1_of_2">
                         <div className="verticaly-center">

@@ -30,10 +30,10 @@ const LandingPage = () =>
             <p className="margin-top-small u-width-medium">For 6 years now I have been building user interfaces learning new things as I go along</p>
             <button className="btn btn--alternative margin-top">Download my Resume<Icon iconName="download"/></button>
         </Panel>
-        <Panel modifier="alternative" imgSrc={require("../../images/responsivedesign.jpg")} imgPanel imgAlignment="left">
-                <h2 className="heading-small">Simply put, I make pixels do things.</h2>
-                <p className="margin-top-small u-width-small">For 6 years now I have been building user interfaces learning new things as I go along</p>
-                <button className="btn btn--alternative margin-top-large">Download my Resume<Icon iconName="download"/></button>
+        <Panel modifier="alternative" imgSrc={require("../../images/responsivedesignlight.png")} imgPanel imgAlignment="left">
+            <h2 className="heading-small">Simply put, I make pixels do things.</h2>
+            <p className="margin-top-small u-width-medium">For 6 years now I have been building user interfaces learning new things as I go along</p>
+            <button className="btn btn--standard margin-top-large">Download my Resume<Icon iconName="download"/></button>
         </Panel>
     </div>;
 
